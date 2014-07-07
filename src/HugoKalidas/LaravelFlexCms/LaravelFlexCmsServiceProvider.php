@@ -1,5 +1,5 @@
 <?php namespace HugoKalidas\LaravelFlexCms;
-
+use App;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelFlexCmsServiceProvider extends ServiceProvider {
@@ -19,6 +19,7 @@ class LaravelFlexCmsServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('hugo-kalidas/laravel-flex-cms');
+        include __DIR__.'/../../routes.php'; // Do some routing here specific to this package
 	}
 
 	/**

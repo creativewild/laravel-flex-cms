@@ -1,0 +1,192 @@
+/* Generic Shit */
+.alert { text-align:left; }
+.alert p { margin-bottom:0; padding-bottom:0; }
+
+/* Main Interface Area */
+body.interface{
+    padding-top:71px;
+}
+
+.form-top-margin{
+    margin-top:15px;
+}
+.thumbnail .image-container{ height:150px; overflow:hidden; display:block; }
+.thumbnail .image-container img{  max-height:150px; display:block; margin:0 auto; border-radius:3px; }
+.thumbnail .caption {  font-size:12px; }
+
+.callout{
+    background-color:#f4f8fa;
+    border-left:3px solid #5bc0de ;
+    padding:10px;
+}
+
+.callout-content{
+    color:#428BCA;
+
+}
+
+.menu_item{
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.gn-menu-main {
+    background-color: #f5f5f5 !important;
+    border-bottom: 1px solid #c6d0da !important;
+}
+
+.gn-menu-main > li {
+
+    background-color: #f5f5f5;
+    width: 60px;
+
+
+}
+
+.gn-menu-main > li > a {
+    font-weight: normal;
+}
+.gn-menu-wrapper {
+    max-width: 250px;
+    border-right: 1px solid #c6d0da;
+    z-index: 10000;
+}
+
+body {
+    background: #FFF !important;
+}
+
+.gn-menu-main > li > a {
+    font-weight: normal;
+}
+
+.gn-menu-main > li > a.top_menu{
+    padding: 0  !important;
+}
+
+.gn-menu-main > li:last-child {
+    float: right;
+    width: 150px;
+    padding: 0;
+}
+
+.btn, .btn-sm, .btn-xs {
+    border-radius: 1px !important;
+}
+
+a.pull-right {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+input.pull-right {
+    margin-top: 10px;
+}
+
+
+
+
+.panel, .form-control, .input-group, .input-group-addon, .form-group, #cke_editor, .cke_toolgroup, .cke_combo_button  {
+    border-radius: 1px !important;
+}
+
+.cke_toolbar_break {
+    display:inline !important;
+}
+
+#cke_editor, .cke_bottom, .cke_top {
+    background: #F4F8FA !important;
+}
+
+a.back_link {
+    text-decoration:none !important;
+}
+
+.chosen-container-multi .chosen-choices  {
+    width: 100% !important;
+    height: 34px !important;
+    margin-right: 0 !important;
+    
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type=text] {
+    height: auto !important;
+}
+.chosen-drop {
+    width: 50% !important;
+}
+
+.chosen-single {
+    width: 50% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+}
+
+#colDraggable {
+    margin: 50px;
+    float:left;
+}
+
+#columnsPanel {
+    max-width: 50%;
+}
+
+#containerTitle{
+    max-width: 50%;
+}
+
+.postImage {
+    width: 150px !important;
+    height: 113px !important;
+}
+
+.formContainer {
+    padding: 150px 0;
+}
+
+.input-group-addon {
+
+    color: #fff;
+
+    background-color: #0095D4;
+
+    border-radius: 1px;
+    min-width: 130px;
+
+}
+
+.btn , .btn-sm {
+
+    border-radius: 0;
+}
+
+.chosen-width {
+    padding-right: 0 !important;
+}
+
+.ace_gutter {
+    background: black;
+    color: white;
+}
+
+.ace_layer {
+
+    border: 1px solid grey;
+
+}
+
+.ace_content, #editor {
+    width: 100% !important;
+    max-width: 98% !important;
+}
+
+#aceFrame {
+    background-color: #ccc;
+}
+
+.relatedList {
+    margin-top: 10px;
+}
+
+.relatedList p{
+    min-width: 300px;
+}

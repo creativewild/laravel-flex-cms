@@ -1,0 +1,43 @@
+@extends('laravel-flex-cms::layouts.interface-new')
+
+@section('title')
+    Create New Layout
+@stop
+
+@section('heading')
+    <h1>Create a New Layout</h1>
+@stop
+
+@section('form-items')
+
+    <div class="form-group">
+        {{ Form::label( "title" , 'Layout Title' , array( 'class'=>'col-lg-2 control-label' ) ) }}
+        <div class="col-lg-3">
+            {{ Form::text( "title" , Input::old( "title" ) , array( 'class'=>'form-control' , 'placeholder'=>'Layout Title' ) ) }}
+        </div>
+        {{ Form::label( "classes" , 'Container Classes' , array( 'class'=>'col-lg-3 control-label' ) ) }}
+        <div class="col-lg-4">
+            <?php
+            //Todo pass the model
+            $elClasses = HugoKalidas\FlexCms\ElementClasses\ElementClasses::lists('html_class','id')
+
+            ?>
+            {{ Form::select("classes[]", array("default" => "container") +  $elClasses, "default" , ["multiple" => true, "class" => "chosen-select"]) }}
+        </div>
+    </div>
+    <div class="form-group ">
+        {{ Form::label( "columns" , 'Drop Columns' , array( 'class'=>'col-lg-2 control-label' ) ) }}
+
+    <div class="col-lg-10 columnContainer">
+        <div class="col-lg-6 " id="dropContainer" style="border:1px solid grey; padding:10px 0px; min-height:100px; " >
+
+        </div>
+        <div class="col-lg-6 ">
+
+            <a id="colDraggable"  type='button' class="btn btn-default"> Drag a new column<a >
+
+
+        </div>
+    </div>
+</div>
+@stop

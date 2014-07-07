@@ -1,0 +1,36 @@
+@extends('laravel-bootstrap::layouts.interface-edit')
+
+@section('title')
+    Edit View: {{ $item->title }}
+@stop
+
+@section('heading')
+    <h1>Edit Post: <small>{{ $item->title }}</small></h1>
+@stop
+
+@section('form-items')
+
+    <div class="form-group">
+        {{ Form::label( "title" , 'Post Title' , array( 'class'=>'col-lg-2 control-label' ) ) }}
+        <div class="col-lg-10">
+            {{ Form::text( "title" , Input::old( "title" , $item->title ) , array( 'class'=>'form-control' , 'placeholder'=>'Post Title' ) ) }}
+        </div>
+    </div>
+    <div class="form-group">
+            {{ Form::label( "key" , 'View Key' , array( 'class'=>'col-lg-2 control-label' ) ) }}
+        <div class="col-lg-10">
+            {{ Form::text( "key" , Input::old( "key", $item->key ) , array( 'class'=>'form-control' , 'placeholder'=>'View Key' ) ) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+    {{ Form::label( "blocks" , 'View Blocks' , array( 'class'=>'col-lg-2 control-label' ) ) }}
+    <div class="col-lg-10">
+        <?php $blocks = Davzie\LaravelBootstrap\Blocks\Blocks::lists('title','id') ?>
+
+        {{ Form::select('blocksView[]', $blocks, Input::old('blocks_id'), ['multiple' => true, 'class' => 'chosen-select']) }}
+    </div>
+</div>
+
+    
+@stop

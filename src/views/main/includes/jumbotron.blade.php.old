@@ -1,0 +1,65 @@
+<div id="myCarousel" class="carousel slide containerTop">
+    {{-- */ $count=0; /* --}}
+    @foreach ($jumbo->posts()->get() as $slide)
+    @if(!$count)
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/uploads/posts/{{$slide->id}}/{{$slide->uploads()->get()[0]->filename}}">
+
+            <div class="container">
+                <div class="carousel-caption">
+
+
+                    {{ $slide->content }}
+                </div>
+            </div>
+     </div>
+      @else
+        <div class="item">
+            {{-- This will catch the first image attached to the post --}}
+            <img src="/uploads/posts/{{$slide->id}}/{{$slide->uploads()->get()[0]->filename}}">
+
+            <div class="container">
+                <div class="carousel-caption">
+
+
+                    {{ $slide->content }}
+                </div>
+            </div>
+        </div>
+      @endif
+      {{-- */ $count++; /* --}}
+    @endforeach
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+</div>
+    <!-- /.carousel -->
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Menu -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Items -->
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <img src="http://lorempixel.com/1500/600/abstract/1" alt="Slide 1" />
+            </div>
+            <div class="item">
+                <img src="http://lorempixel.com/1500/600/abstract/2" alt="Slide 2" />
+            </div>
+            <div class="item">
+                <img src="http://lorempixel.com/1500/600/abstract/3" alt="Slide 3" />
+            </div>
+        </div>
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>

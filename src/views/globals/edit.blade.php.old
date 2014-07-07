@@ -1,0 +1,164 @@
+@extends('laravel-flex-cms::layouts.interface-edit')
+
+@section('title')
+    Edit Page: {{ $item->title }}
+@stop
+
+@section('heading')
+
+@stop
+
+@section('form-items')
+<div class="form-group">
+    <div class="input-group">
+        <span class="input-group-addon">Page Title</span>
+
+
+            {{ Form::text( "title" , Input::old( "title" , $item->title ) , array( 'class'=>'form-control' , 'placeholder'=>'Post Title' ) ) }}
+
+
+        <span class="input-group-addon">Page Key</span>
+
+            {{ Form::text( "key" , Input::old( "key", $item->key ) , array( 'class'=>'form-control' , 'placeholder'=>'Page Key' ) ) }}
+
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="input-group">
+        <span class="input-group-addon">HTML ID#</span>
+
+            {{ Form::text( "html_ID" , Input::old( "title" ) , array( 'class'=>'form-control' , 'placeholder'=>'Page Container ID' ) ) }}
+
+        <span class="input-group-addon">Keywords</span>
+
+            {{ Form::text( "keywords" , Input::old( "keywords" , $item->keywords ) , array( 'class'=>'form-control rich' , 'placeholder'=>'keywords1, keyword2' ) ) }}
+
+    </div>
+</div>
+<div class="form-group">
+    <div class="input-group">
+
+        <span class="input-group-addon">Description</span>
+
+            {{ Form::textarea( "description" , Input::old( "description" , $item->description ) , array( 'class'=>'form-control' , 'placeholder'=>'content description meta', 'rows'=>'2' ) ) }}
+
+    </div>
+</div>
+<div class="form-group">
+    <div class="input-group">
+        <span class="input-group-addon">Page Blocks</span>
+
+        <?php
+
+            $blocks = HugoKalidas\FlexCms\Blocks\Blocks::lists('title','id');
+            $storedBlocks = $item->blocks();
+        ?>
+
+
+        <select multiple="1" class="chosen-select form-control" name="blocksPage[]">
+            @foreach ($blocks as $id => $title)
+            @if (in_array($id, $storedBlocks->lists('blocks_id') ))
+            <option value="{{$id}}" selected>{{$title}}</option>
+            @else
+            <option value="{{$id}}">{{$title}}</option>
+            @endif
+            @endforeach
+        </select>
+
+        <?php
+        //Todo pass the model
+        $layouts = HugoKalidas\FlexCms\Layouts\Layouts::lists('title','id')
+
+        ?>
+        <span class="input-group-addon">Page Layout</span>
+
+        {{ Form::select("layout", $layouts,Input::old('layout', $item->layouts_id) , ["class" => "chosen-select form-control"]) }}
+
+
+
+
+        </div>
+</div>
+
+@stop
+@section('tabs')
+
+<div class="tab-pane" id="tabs">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <?php $nlayouts = HugoKalidas\FlexCms\Layouts\Layouts::with('containers.columns')->get()->toArray();
+            $layouts = HugoKalidas\FlexCms\Layouts\Layouts::lists('id','id')
+            ?>
+            <div class="form-group">
+                <div class="input-group">
+
+                    <span class="input-group-addon">Layout</span>
+
+                    {{ Form::select("layout", $layouts,Input::old('layout', $item->layouts_id) , ["class" => "form-control", "id" => "laySel" ]) }}
+
+                </div>
+
+            </div>
+
+                    {{-- */ $countBlocks = 0;/* --}}
+                    @foreach($storedBlocks->get() as $block)
+                    {{-- */ $countBlocks++ ;/* --}}
+                        <div class="form-group">
+                            <div class="input-group">
+                                    <span class="input-group-addon">Block {{$block->title}}</span>
+                                <select name="container" id="cont{{$countBlocks}}" class="colSel">
+                                    <option value="">--</option>
+                                @foreach($nlayouts as $nlayout)
+
+
+                                    @foreach ($nlayout['containers'] as $cont)
+
+                                            <option value="{{ $cont['title'] }}" class="layout{{ $cont['layouts_id'] }}">{{ $cont['title'] }}</option>
+
+
+                                    @endforeach
+
+
+                                @endforeach
+                                </select>
+                                <select name="columns" id="cols{{$countBlocks}}" class="colSel">
+                                    <option value="">--</option>
+                                    @foreach($nlayouts as $nlayout)
+
+
+                                    @foreach ($nlayout['containers'] as $cont)
+                                    @foreach ($cont['columns'] as $col)
+                                            <option value="{{ $col['id'] }}" class="container{{ $col['containers_id'] }}">{{ $col['id'] }}</option>
+                                    @endforeach
+
+
+
+
+                                    @endforeach
+
+
+                                    @endforeach
+                                </select>
+
+
+
+                            </div>
+                        </div>
+                    @endforeach
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+@stop
