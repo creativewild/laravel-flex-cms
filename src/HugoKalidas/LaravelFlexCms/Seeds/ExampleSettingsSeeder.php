@@ -13,7 +13,7 @@ class ExampleSettingsSeeder extends Seeder {
             [
                 'key'           => 'application_name',
                 'label'         => 'Application Name',
-                'value'         => Config::get('laravel-bootstrap::app.name')
+                'value'         => Config::get('laravel-flex-cms::app.name')
             ]
         ];
         DB::table('settings')->insert($types);

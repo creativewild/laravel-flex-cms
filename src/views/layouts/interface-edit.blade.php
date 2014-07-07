@@ -58,8 +58,8 @@
 @section('scripts')
     @parent
     @if( isset($uploadable) and $uploadable )
-        <script src="{{ asset('packages/davzie/laravel-flex-cms/js/dropzone/dropzone.min.js') }}"></script>
-        <script src="{{ asset('packages/davzie/laravel-flex-cms/js/jquery-ui.js') }}"></script>
+        <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/dropzone/dropzone.min.js') }}"></script>
+        <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/jquery-ui.js') }}"></script>
         <script>
             $(document).ready(function(){
 
@@ -114,5 +114,5 @@
 @stop
 @section('css')
     @parent
-    <link rel="stylesheet" href="{{ asset('packages/davzie/laravel-flex-cms/js/dropzone/css/dropzone.css') }}">
+    <link rel="stylesheet" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/dropzone/css/dropzone.css') }}">
 @stop

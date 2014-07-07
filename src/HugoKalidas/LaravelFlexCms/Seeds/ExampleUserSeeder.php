@@ -12,10 +12,10 @@ class ExampleUserSeeder extends Seeder {
 
         $types = [
             [
-                'email'         => Config::get('laravel-bootstrap::setup.email'),
-                'first_name'    => Config::get('laravel-bootstrap::setup.first-name'),
-                'last_name'     => Config::get('laravel-bootstrap::setup.last-name'),
-                'password'      => Hash::make( Config::get('laravel-bootstrap::setup.password') ),
+                'email'         => Config::get('laravel-flex-cms::setup.email'),
+                'first_name'    => Config::get('laravel-flex-cms::setup.first-name'),
+                'last_name'     => Config::get('laravel-flex-cms::setup.last-name'),
+                'password'      => Hash::make( Config::get('laravel-flex-cms::setup.password') ),
                 'created_at'    => date('Y-m-d H:i:s'),
                 'updated_at'    => date('Y-m-d H:i:s')
             ]

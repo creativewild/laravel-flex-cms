@@ -88,7 +88,7 @@
     <div class="panel panel-default">
             <div class="panel-heading">
                 <h1>Edit {{$item->type}} : <b><small>{{$item->title}} </small></b>
-                <img src="/packages/davzie/laravel-flex-cms/images/ace-logo.png" alt="ace logo" class="pull-right" style="width: 60px"/>
+                <img src="/packages/hugo-kalidas/laravel-flex-cms/images/ace-logo.png" alt="ace logo" class="pull-right" style="width: 60px"/>
                 </h1>
             </div>
     </div>
@@ -98,7 +98,7 @@
         <?php echo htmlspecialchars(file_get_contents($item->path, FILE_USE_INCLUDE_PATH)); ?>
     </div>
 
-    <script src="/packages/davzie/laravel-flex-cms/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/packages/hugo-kalidas/laravel-flex-cms/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
     <script>
         var editor = ace.edit("editor");
         editor.setTheme("ace/theme/monokai");

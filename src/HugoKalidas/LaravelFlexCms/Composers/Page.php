@@ -17,8 +17,8 @@ class Page{
         $view->with('user', Auth::user())
              ->with('app_name', $settings->getAppName() )
              ->with('appUrl', Config::get('app.url'))
-             ->with('urlSegment', Config::get('laravel-bootstrap::app.access_url') )
-             ->with('menu_items', Config::get('laravel-bootstrap::app.menu_items') )
+             ->with('urlSegment', Config::get('laravel-flex-cms::app.access_url') )
+             ->with('menu_items', Config::get('laravel-flex-cms::app.menu_items') )
              ->with('success', Session::get('success' , new MessageBag ) );
     }
 

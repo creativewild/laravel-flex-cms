@@ -27,7 +27,7 @@ Route::group(array('before' => 'auth'), function()
     //debug
     Route::get('/session', array('before' => 'auth' ,function()
     {
-        Kint::dump(Session::all());
+        var_dump(Session::all());
     }));
     //end debug
 

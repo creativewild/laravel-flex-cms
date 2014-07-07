@@ -26,11 +26,7 @@ App::bind('HugoKalidas\LaravelFlexCms\Blocks\BlocksInterface', function(){
     return new HugoKalidas\LaravelFlexCms\Blocks\BlocksRepository( new HugoKalidas\LaravelFlexCms\Blocks\Blocks );
 });
 
-//todo refactor to blocks namespace
-// The BlocksTypes Bindings
-App::bind('HugoKalidas\LaravelFlexCms\BlocksTypes\BlocksTypesInterface', function(){
-    return new HugoKalidas\LaravelFlexCms\BlocksTypes\BlocksTypesRepository( new HugoKalidas\LaravelFlexCms\BlocksTypes\BlocksTypes );
-});
+
 
 // The Assets Bindings
 App::bind('HugoKalidas\LaravelFlexCms\Assets\AssetsInterface', function(){

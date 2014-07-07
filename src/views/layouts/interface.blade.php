@@ -10,16 +10,16 @@
 
         <!-- Bootstrap core CSS -->
         @section('css')
-            <link rel="stylesheet" href="{{ asset('packages/davzie/laravel-flex-cms/css/bootstrap.min.css') }}">
-            <link rel="stylesheet" href="{{ asset('packages/davzie/laravel-flex-cms/css/styles.css') }}">
-            <link rel="stylesheet" href="{{ asset('packages/davzie/laravel-flex-cms/css/jquery.tagsinput.min.css') }}">
-            <link rel="stylesheet" href="{{ asset('packages/davzie/laravel-flex-cms/css/redactor.css') }}">
-            <link rel="stylesheet" href="{{ asset('packages/davzie/laravel-flex-cms/css/chosen.min.css') }}">
-            <link rel="stylesheet" type="text/css" href="{{ asset('packages/davzie/laravel-flex-cms/menu/css/normalize.css') }}"/>
-            <link rel="stylesheet" type="text/css" href="{{ asset('packages/davzie/laravel-flex-cms/menu/css/demo.css') }}"/>
-            <link rel="stylesheet" type="text/css" href="{{ asset('packages/davzie/laravel-flex-cms/menu/css/component.css') }}"/>
+            <link rel="stylesheet" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/css/styles.css') }}">
+            <link rel="stylesheet" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/css/jquery.tagsinput.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/css/redactor.css') }}">
+            <link rel="stylesheet" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/css/chosen.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/menu/css/normalize.css') }}"/>
+            <link rel="stylesheet" type="text/css" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/menu/css/demo.css') }}"/>
+            <link rel="stylesheet" type="text/css" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/menu/css/component.css') }}"/>
 
-            <script src="{{ asset('packages/davzie/laravel-flex-cms/menu/js/modernizr.custom.js') }}"></script>
+            <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/menu/js/modernizr.custom.js') }}"></script>
         @show
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -56,7 +56,11 @@
                                             </li>
                                             @endif
                                         @endforeach
-
+						<li>
+                                               		 <a  href="{{ url( $urlSegment.'/logout' ) }}">
+                                                    	<span class="menu_item glyphicon glyphicon-log-out"></span> Logout
+                                                </a>
+                                            </li>
                                     @endif
 
                                 </ul>
@@ -66,12 +70,13 @@
 
                     @if($menu_items)
                         @foreach($menu_items as $url=>$item)
-                            @if( $item['top'] and ($item['editor'] or Auth::User()->id==3))
+                            @if( $item['top'] and ($item['editor'] or Auth::User()->id==1))
                             <li class=" {{ Request::is( "$urlSegment/$url*" ) ? 'active' : '' }} ">
                             <a  class="top_menu" href="{{ url( $urlSegment.'/'.$url ) }}"> <span class=" glyphicon glyphicon-{{ $item['icon'] }}"></a>
                             </li>
                             @endif
                         @endforeach
+			
 
                     @endif
                     <li class=".top_menu">
@@ -107,22 +112,22 @@
         </div><!--/.container-->
 
         {{-- */ $path = Request::segment(1)."/".Request::segment(2)."/".Request::segment(3);  /* --}}
-        {{\Kint::dump($path)}}
+
         <script>
 
             appUrl='{{$appUrl}}';
         </script>
 
         @section('scripts')
-            <script src="{{ asset('packages/davzie/laravel-flex-cms/js/jquery.js') }}"></script>
-            <script src="{{ asset('packages/davzie/laravel-flex-cms/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/jquery.js') }}"></script>
+            <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/bootstrap.min.js') }}"></script>
              <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-            <script src="{{ asset('packages/davzie/laravel-flex-cms/js/jquery.tagsinput.min.js') }}"></script>
-        {{-- <script src="{{ asset('packages/davzie/laravel-flex-cms/js/redactor.min.js') }}"></script>--}}
-             <script src="{{asset('packages/davzie/laravel-flex-cms/js/ckeditor/ckeditor.js')}}"></script>
-             <script src="{{ asset('packages/davzie/laravel-flex-cms/js/chosen.jquery.min.js') }}"></script>
+            <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/jquery.tagsinput.min.js') }}"></script>
+        {{-- <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/redactor.min.js') }}"></script>--}}
+             <script src="{{asset('packages/hugo-kalidas/laravel-flex-cms/js/ckeditor/ckeditor.js')}}"></script>
+             <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/chosen.jquery.min.js') }}"></script>
 
-        <script src="{{ asset('packages/davzie/laravel-flex-cms/js/cms/main.js') }}"></script>
+        <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/cms/main.js') }}"></script>
 
 
         <?php
@@ -209,8 +214,8 @@
 
         </script>
 
-        <script src="{{ asset('packages/davzie/laravel-flex-cms/menu/js/classie.js') }}"></script>
-        <script src="{{ asset('packages/davzie/laravel-flex-cms/menu/js/gnmenu.js') }}"></script>
+        <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/menu/js/classie.js') }}"></script>
+        <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/menu/js/gnmenu.js') }}"></script>
         <script>
             new gnMenu( document.getElementById( 'gn-menu' ) );
         </script>

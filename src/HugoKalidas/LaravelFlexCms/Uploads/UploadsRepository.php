@@ -72,7 +72,7 @@ class UploadsRepository extends EloquentBaseRepository implements UploadsInterfa
      */
     public function deleteByIdType( $id , $type ){
         // Delete the images directory for these types / links
-        $base_path = Config::get('laravel-bootstrap::app.upload_base_path');
+        $base_path = Config::get('laravel-flex-cms::app.upload_base_path');
         $toDelete  = public_path().'/'.$base_path.$type.'/'.$id;
         File::deleteDirectory( $toDelete );
 
@@ -127,7 +127,7 @@ class UploadsRepository extends EloquentBaseRepository implements UploadsInterfa
     public function doUpload( $id , $type , $key )
     {
 
-        $base_path = Config::get('laravel-bootstrap::app.upload_base_path');
+        $base_path = Config::get('laravel-flex-cms::app.upload_base_path');
         // Setup some useful variables
         $randomKey  = sha1( time() . microtime() );
         $extension  = Input::file('file')->getClientOriginalExtension();

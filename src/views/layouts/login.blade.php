@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @section('css')
-        <link rel="stylesheet" href="{{ asset('packages/davzie/laravel-flex-cms/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('packages/davzie/laravel-flex-cms/css/login.css') }}">
+        <link rel="stylesheet" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('packages/hugo-kalidas/laravel-flex-cms/css/login.css') }}">
     @show
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -42,8 +42,8 @@
     </div>
 
     @section('scripts')
-        <script src="{{ asset('packages/davzie/laravel-flex-cms/js/jquery.js') }}"></script>
-        <script src="{{ asset('packages/davzie/laravel-flex-cms/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/jquery.js') }}"></script>
+        <script src="{{ asset('packages/hugo-kalidas/laravel-flex-cms/js/bootstrap.min.js') }}"></script>
     @show
 </body>
 </html>

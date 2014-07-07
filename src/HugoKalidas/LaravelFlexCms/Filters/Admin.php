@@ -11,7 +11,7 @@ class Admin {
     {
 
         if ( Auth::guest() )
-            return Redirect::guest( Config::get('laravel-bootstrap::app.access_url').'/login');
+            return Redirect::guest( Config::get('laravel-flex-cms::app.access_url').'/login');
 
     }
 

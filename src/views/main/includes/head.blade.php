@@ -35,12 +35,12 @@
 <!-- loop head top Assets -->
 
 
-{{HTML::style(asset('packages/davzie/laravel-flex-cms/css/bootstrap.css'))}}
-{{HTML::style(asset('packages/davzie/laravel-flex-cms/css/main.css'))}}
-{{HTML::style(asset('packages/davzie/laravel-flex-cms/css/font-awesome.min.css'))}}
+{{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/bootstrap.css'))}}
+{{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/main.css'))}}
+{{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/font-awesome.min.css'))}}
 @if (isset($customStyle))
 
-    {{HTML::style(asset('packages/davzie/laravel-flex-cms/css/'.$customStyle))}}
+    {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/'.$customStyle))}}
 @endif
 @if (isset($gallery))
 

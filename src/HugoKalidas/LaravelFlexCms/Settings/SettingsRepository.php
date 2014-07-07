@@ -33,7 +33,7 @@ class SettingsRepository extends EloquentBaseRepository implements SettingsInter
         if( $name = $this->model->where('key','application_name')->first() )
             return $name->value;
 
-        return Config::get('laravel-bootstrap::app.name');
+        return Config::get('laravel-flex-cms::app.name');
     }
 
 }
