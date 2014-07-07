@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Globals;
+<?php namespace HugoKalidas\LaravelFlexCms\Globals;
 
 interface GlobalsInterface {
 

@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Utilities;
-use HugoKalidas\FlexCms\Uploads\Uploads;
+<?php namespace HugoKalidas\LaravelFlexCms\Utilities;
+use HugoKalidas\LaravelFlexCms\Uploads\Uploads;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\Image;
 

@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Core;
-use HugoKalidas\FlexCms\Core\Exceptions\NoValidationRulesFoundException;
+<?php namespace HugoKalidas\LaravelFlexCms\Core;
+use HugoKalidas\LaravelFlexCms\Core\Exceptions\NoValidationRulesFoundException;
 use Validator, Eloquent, ReflectionClass, Input, Session;
 
 /**
@@ -112,7 +112,7 @@ class EloquentBaseModel extends Eloquent
      */
     public function isTaggable()
     {
-        return in_array( 'HugoKalidas\FlexCms\Abstracts\Traits\TaggableRelationship' , ( new ReflectionClass( $this ) )->getTraitNames() );
+        return in_array( 'HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRelationship' , ( new ReflectionClass( $this ) )->getTraitNames() );
     }
 
     /**
@@ -121,7 +121,7 @@ class EloquentBaseModel extends Eloquent
      */
     public function isUploadable()
     {
-        return in_array( 'HugoKalidas\FlexCms\Abstracts\Traits\UploadableRelationship' , ( new ReflectionClass( $this ) )->getTraitNames() );
+        return in_array( 'HugoKalidas\LaravelFlexCms\Abstracts\Traits\UploadableRelationship' , ( new ReflectionClass( $this ) )->getTraitNames() );
     }
 
     /**
@@ -131,7 +131,7 @@ class EloquentBaseModel extends Eloquent
 
     public function isClassable()
     {
-        return in_array( 'HugoKalidas\FlexCms\Abstracts\Traits\ClassableRelationship' , ( new ReflectionClass( $this ) )->getTraitNames() );
+        return in_array( 'HugoKalidas\LaravelFlexCms\Abstracts\Traits\ClassableRelationship' , ( new ReflectionClass( $this ) )->getTraitNames() );
     }
 
 

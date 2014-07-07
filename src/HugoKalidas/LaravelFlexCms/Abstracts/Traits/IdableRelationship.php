@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts\Traits;
-use HugoKalidas\FlexCms\ElementIds\ElementIds as ElementIdEloquent;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts\Traits;
+use HugoKalidas\LaravelFlexCms\ElementIds\ElementIds as ElementIdEloquent;
 use Input;
 // TODO refactor one to one
 trait IdableRelationship
@@ -11,7 +11,7 @@ trait IdableRelationship
      */
     public function element_id()
     {
-        return $this->MorphOne( 'HugoKalidas\FlexCms\ElementIds\ElementIds' , 'idable' );
+        return $this->MorphOne( 'HugoKalidas\LaravelFlexCms\ElementIds\ElementIds' , 'idable' );
     }
 
     /**

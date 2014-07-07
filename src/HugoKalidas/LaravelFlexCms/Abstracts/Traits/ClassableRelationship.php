@@ -1,8 +1,8 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts\Traits;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts\Traits;
 
 use Illuminate\Support\Facades\Session;
 use Input;
-use HugoKalidas\FlexCms\ElementClasses\ElementClasses as ClassEloquent;
+use HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses as ClassEloquent;
 trait ClassableRelationship
 {
 
@@ -12,7 +12,7 @@ trait ClassableRelationship
      */
     public function classes()
     {
-        return $this->morphToMany('HugoKalidas\FlexCms\ElementClasses\ElementClasses' , 'classable');
+        return $this->morphToMany('HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses' , 'classable');
     }
 
     public function saveClasses( $classes = null )

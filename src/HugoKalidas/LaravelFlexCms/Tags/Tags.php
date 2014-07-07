@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Tags;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
+<?php namespace HugoKalidas\LaravelFlexCms\Tags;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
 
 class Tags extends EloquentBaseModel
 {

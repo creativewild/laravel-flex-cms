@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Blocks;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Blocks;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRepository;
 
 class BlocksRepository extends EloquentBaseRepository implements BlocksInterface
 {

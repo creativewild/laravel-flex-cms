@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Blocks\BlocksInterface;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Blocks\BlocksInterface;
 use Illuminate\Support\MessageBag;
 use View, Redirect, Input, App, ReflectionClass, Request, Config, Response, Session;
 class BlocksController extends ObjectBaseController {

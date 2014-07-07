@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Uploads;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
-use HugoKalidas\FlexCms\Utilities\ImgHelper;
+<?php namespace HugoKalidas\LaravelFlexCms\Uploads;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
+use HugoKalidas\LaravelFlexCms\Utilities\ImgHelper;
 use Config, File, Input;
 
 class UploadsRepository extends EloquentBaseRepository implements UploadsInterface

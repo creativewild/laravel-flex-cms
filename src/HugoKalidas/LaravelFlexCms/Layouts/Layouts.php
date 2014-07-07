@@ -1,7 +1,7 @@
-<?php namespace HugoKalidas\FlexCms\Layouts;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
+<?php namespace HugoKalidas\LaravelFlexCms\Layouts;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
 
-use HugoKalidas\FlexCms\Columns\Columns as Columns;
+use HugoKalidas\LaravelFlexCms\Columns\Columns as Columns;
 
 class Layouts  extends EloquentBaseModel
 {
@@ -27,15 +27,15 @@ class Layouts  extends EloquentBaseModel
 
 /*
     public function blocks(){
-       return $this->hasMany('HugoKalidas\FlexCms\Blocks\Blocks');
+       return $this->hasMany('HugoKalidas\LaravelFlexCms\Blocks\Blocks');
     }*/
 
     public function pages(){
-        return $this->hasMany('HugoKalidas\FlexCms\Pages\Pages');
+        return $this->hasMany('HugoKalidas\LaravelFlexCms\Pages\Pages');
     }
 
   /*  public function columns(){
-        return $this->hasMany('HugoKalidas\FlexCms\Columns\Columns');
+        return $this->hasMany('HugoKalidas\LaravelFlexCms\Columns\Columns');
     }*/
 
     //lame helpers
@@ -56,7 +56,7 @@ class Layouts  extends EloquentBaseModel
     }*/
 
     public function containers(){
-        return $this->hasMany('HugoKalidas\FlexCms\Containers\Containers');
+        return $this->hasMany('HugoKalidas\LaravelFlexCms\Containers\Containers');
     }
 
 

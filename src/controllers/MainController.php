@@ -1,16 +1,16 @@
 <?php
-namespace HugoKalidas\FlexCms\Controllers;
+namespace HugoKalidas\LaravelFlexCms\Controllers;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\URL;
 use View, Request;
-use HugoKalidas\FlexCms\Pages\Pages as Pages;
-use HugoKalidas\FlexCms\Posts\Posts as Posts;
-use HugoKalidas\FlexCms\Menus\Menus as Menus;
-use HugoKalidas\FlexCms\Blocks\Blocks as Blocks;
-use HugoKalidas\FlexCms\Galleries\Galleries as Galleries;
-use HugoKalidas\FlexCms\Layouts\Layouts as Layouts;
-use HugoKalidas\FlexCms\Assets\Assets as Assets;
+use HugoKalidas\LaravelFlexCms\Pages\Pages as Pages;
+use HugoKalidas\LaravelFlexCms\Posts\Posts as Posts;
+use HugoKalidas\LaravelFlexCms\Menus\Menus as Menus;
+use HugoKalidas\LaravelFlexCms\Blocks\Blocks as Blocks;
+use HugoKalidas\LaravelFlexCms\Galleries\Galleries as Galleries;
+use HugoKalidas\LaravelFlexCms\Layouts\Layouts as Layouts;
+use HugoKalidas\LaravelFlexCms\Assets\Assets as Assets;
 
 
 class MainController extends BaseController{

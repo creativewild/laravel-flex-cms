@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Blocks;
+<?php namespace HugoKalidas\LaravelFlexCms\Blocks;
 
 interface BlocksInterface {
 

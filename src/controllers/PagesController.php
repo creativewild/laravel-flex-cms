@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Pages\PagesInterface;
-use HugoKalidas\FlexCms\Pages\Pages;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Pages\PagesInterface;
+use HugoKalidas\LaravelFlexCms\Pages\Pages;
 use View;
 class PagesController extends ObjectBaseController {
 

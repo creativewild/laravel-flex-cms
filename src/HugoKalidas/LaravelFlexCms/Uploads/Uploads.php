@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Uploads;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
-use HugoKalidas\FlexCms\Utilities\ImgHelper;
+<?php namespace HugoKalidas\LaravelFlexCms\Uploads;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
+use HugoKalidas\LaravelFlexCms\Utilities\ImgHelper;
 use Config;
 
 class Uploads extends EloquentBaseModel

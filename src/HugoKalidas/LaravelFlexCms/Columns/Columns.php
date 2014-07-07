@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Columns;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
-use HugoKalidas\FlexCms\Abstracts\Traits\ClassableRelationship;
+<?php namespace HugoKalidas\LaravelFlexCms\Columns;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\ClassableRelationship;
 
 class Columns  extends EloquentBaseModel
 {
@@ -23,11 +23,11 @@ class Columns  extends EloquentBaseModel
 
 
     public function containers(){
-        return $this->belongsTo('HugoKalidas\FlexCms\Containers\Containers');
+        return $this->belongsTo('HugoKalidas\LaravelFlexCms\Containers\Containers');
     }
 
     public function blocks() {
-        return $this->belongsToMany('HugoKalidas\FlexCms\Blocks\Blocks')->withPivot('pages_id');
+        return $this->belongsToMany('HugoKalidas\LaravelFlexCms\Blocks\Blocks')->withPivot('pages_id');
     }
 
 }

@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\ElementIds;
+<?php namespace HugoKalidas\LaravelFlexCms\ElementIds;
 
 interface ElementIdsInterface {
     

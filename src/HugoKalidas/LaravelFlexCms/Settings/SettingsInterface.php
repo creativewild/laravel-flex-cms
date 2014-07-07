@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Settings;
+<?php namespace HugoKalidas\LaravelFlexCms\Settings;
 
 interface SettingsInterface {
     

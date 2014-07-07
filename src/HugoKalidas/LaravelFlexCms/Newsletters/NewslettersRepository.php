@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Newsletters;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Newsletters;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRepository;
 
 class NewslettersRepository extends EloquentBaseRepository implements NewslettersInterface
 {

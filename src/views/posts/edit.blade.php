@@ -85,7 +85,7 @@
 
                 <?php
                 //Todo pass the model
-                $elClasses = HugoKalidas\FlexCms\ElementClasses\ElementClasses::lists('html_class','id');
+                $elClasses = HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses::lists('html_class','id');
                 $storedClasses = $item->classes()->lists('id');
                 ?>
                 {{Form::select('classes[]',$elClasses,$storedClasses,array( 'class'=>'form-control chosen-select',"multiple" =>1 ) )}}

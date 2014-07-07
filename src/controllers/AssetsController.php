@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Assets\AssetsInterface;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Assets\AssetsInterface;
 use Illuminate\Support\MessageBag;
 use View, Redirect, Input, App, Request, Config, Response, Session, File;
 class AssetsController extends ObjectBaseController {

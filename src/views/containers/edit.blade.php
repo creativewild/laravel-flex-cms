@@ -19,10 +19,10 @@
 
                 <?php
                 //Todo pass the model
-                $elClasses = HugoKalidas\FlexCms\ElementClasses\ElementClasses::lists('html_class','id');
+                $elClasses = HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses::lists('html_class','id');
                 $storedClasses = $item->classes()->lists('id');
                 //$lay=array(null=>'--');
-                $layouts = HugoKalidas\FlexCms\Layouts\Layouts::lists('title','id');
+                $layouts = HugoKalidas\LaravelFlexCms\Layouts\Layouts::lists('title','id');
                 //Todo render null
                 $layouts[null] = '--';
                 ?>
@@ -106,7 +106,7 @@
         <?php
 
         $cl=array(null=>'--');
-        $classes = HugoKalidas\FlexCms\ElementClasses\ElementClasses::lists('html_class','id');
+        $classes = HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses::lists('html_class','id');
 
        // $classes=array_merge($cl,$classes);
 

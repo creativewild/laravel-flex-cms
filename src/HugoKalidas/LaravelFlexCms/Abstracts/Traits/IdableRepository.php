@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts\Traits;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts\Traits;
 
 trait IdableRepository
 {

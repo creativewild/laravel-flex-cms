@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts\Traits;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts\Traits;
 use App;
 
 trait UploadableRelationship
@@ -10,7 +10,7 @@ trait UploadableRelationship
      */
     public function uploads()
     {
-        return $this->morphMany( 'HugoKalidas\FlexCms\Uploads\Uploads' , 'uploadable' )->orderBy('order','asc');
+        return $this->morphMany( 'HugoKalidas\LaravelFlexCms\Uploads\Uploads' , 'uploadable' )->orderBy('order','asc');
     }
 
     /**
@@ -19,7 +19,7 @@ trait UploadableRelationship
      */
     public function deleteImagery($id)
     {
-        $uploads = App::make('HugoKalidas\FlexCms\Uploads\UploadsInterface');
+        $uploads = App::make('HugoKalidas\LaravelFlexCms\Uploads\UploadsInterface');
         $uploads->deleteById( $id );
     }
 
@@ -29,7 +29,7 @@ trait UploadableRelationship
      */
     public function deleteAllImagery()
     {
-        $uploads = App::make('HugoKalidas\FlexCms\Uploads\UploadsInterface');
+        $uploads = App::make('HugoKalidas\LaravelFlexCms\Uploads\UploadsInterface');
         $uploads->deleteByIdType( $this->id , $this->getTableName() );
     }
 

@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Newsletters;
+<?php namespace HugoKalidas\LaravelFlexCms\Newsletters;
 
 interface NewslettersInterface {
 

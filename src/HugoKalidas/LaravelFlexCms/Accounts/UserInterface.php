@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Accounts;
+<?php namespace HugoKalidas\LaravelFlexCms\Accounts;
 
 interface UserInterface {
     

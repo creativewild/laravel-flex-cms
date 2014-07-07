@@ -1,8 +1,8 @@
-<?php namespace HugoKalidas\FlexCms\Menus;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRelationship;
-use HugoKalidas\FlexCms\Abstracts\Traits\UploadableRelationship;
-use HugoKalidas\FlexCms\Posts\Posts;
+<?php namespace HugoKalidas\LaravelFlexCms\Menus;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRelationship;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\UploadableRelationship;
+use HugoKalidas\LaravelFlexCms\Posts\Posts;
 
 class Menus extends EloquentBaseModel
 {
@@ -30,6 +30,6 @@ class Menus extends EloquentBaseModel
     ];
 
     public function pages() {
-        return $this->belongsToMany('HugoKalidas\FlexCms\Pages\Pages')->orderBy('menus_pages.id', 'asc');
+        return $this->belongsToMany('HugoKalidas\LaravelFlexCms\Pages\Pages')->orderBy('menus_pages.id', 'asc');
     }
 }

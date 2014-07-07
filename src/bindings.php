@@ -1,84 +1,84 @@
 <?php
 
 // The Posts Bindings
-App::bind('HugoKalidas\FlexCms\Posts\PostsInterface', function(){
-    return new HugoKalidas\FlexCms\Posts\PostsRepository( new HugoKalidas\FlexCms\Posts\Posts );
+App::bind('HugoKalidas\LaravelFlexCms\Posts\PostsInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Posts\PostsRepository( new HugoKalidas\LaravelFlexCms\Posts\Posts );
 });
 
 // The Users Bindings
-App::bind('HugoKalidas\FlexCms\Accounts\UserInterface', function(){
-    return new HugoKalidas\FlexCms\Accounts\UserRepository( new HugoKalidas\FlexCms\Accounts\User );
+App::bind('HugoKalidas\LaravelFlexCms\Accounts\UserInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Accounts\UserRepository( new HugoKalidas\LaravelFlexCms\Accounts\User );
 });
 
 // The Settings Bindings
-App::bind('HugoKalidas\FlexCms\Settings\SettingsInterface', function(){
-    return new HugoKalidas\FlexCms\Settings\SettingsRepository( new HugoKalidas\FlexCms\Settings\Settings );
+App::bind('HugoKalidas\LaravelFlexCms\Settings\SettingsInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Settings\SettingsRepository( new HugoKalidas\LaravelFlexCms\Settings\Settings );
 });
 
 // The Newletters Bindings
-App::bind('HugoKalidas\FlexCms\Newsletters\NewslettersInterface', function(){
-    return new HugoKalidas\FlexCms\Newsletters\NewslettersRepository( new HugoKalidas\FlexCms\Newsletters\Newsletters );
+App::bind('HugoKalidas\LaravelFlexCms\Newsletters\NewslettersInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Newsletters\NewslettersRepository( new HugoKalidas\LaravelFlexCms\Newsletters\Newsletters );
 });
 
 
 // The Blocks Bindings
-App::bind('HugoKalidas\FlexCms\Blocks\BlocksInterface', function(){
-    return new HugoKalidas\FlexCms\Blocks\BlocksRepository( new HugoKalidas\FlexCms\Blocks\Blocks );
+App::bind('HugoKalidas\LaravelFlexCms\Blocks\BlocksInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Blocks\BlocksRepository( new HugoKalidas\LaravelFlexCms\Blocks\Blocks );
 });
 
 //todo refactor to blocks namespace
 // The BlocksTypes Bindings
-App::bind('HugoKalidas\FlexCms\BlocksTypes\BlocksTypesInterface', function(){
-    return new HugoKalidas\FlexCms\BlocksTypes\BlocksTypesRepository( new HugoKalidas\FlexCms\BlocksTypes\BlocksTypes );
+App::bind('HugoKalidas\LaravelFlexCms\BlocksTypes\BlocksTypesInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\BlocksTypes\BlocksTypesRepository( new HugoKalidas\LaravelFlexCms\BlocksTypes\BlocksTypes );
 });
 
 // The Assets Bindings
-App::bind('HugoKalidas\FlexCms\Assets\AssetsInterface', function(){
-    return new HugoKalidas\FlexCms\Assets\AssetsRepository( new HugoKalidas\FlexCms\Assets\Assets );
+App::bind('HugoKalidas\LaravelFlexCms\Assets\AssetsInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Assets\AssetsRepository( new HugoKalidas\LaravelFlexCms\Assets\Assets );
 });
 
 // The Pages Bindings
-App::bind('HugoKalidas\FlexCms\Pages\PagesInterface', function(){
-    return new HugoKalidas\FlexCms\Pages\PagesRepository( new HugoKalidas\FlexCms\Pages\Pages );
+App::bind('HugoKalidas\LaravelFlexCms\Pages\PagesInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Pages\PagesRepository( new HugoKalidas\LaravelFlexCms\Pages\Pages );
 });
 
 // The globals Bindings
-App::bind('HugoKalidas\FlexCms\Globals\GlobalsInterface', function(){
-    return new HugoKalidas\FlexCms\Globals\GlobalsRepository( new HugoKalidas\FlexCms\Globals\Globals );
+App::bind('HugoKalidas\LaravelFlexCms\Globals\GlobalsInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Globals\GlobalsRepository( new HugoKalidas\LaravelFlexCms\Globals\Globals );
 });
 
 // The Layouts Bindings
-App::bind('HugoKalidas\FlexCms\Layouts\LayoutsInterface', function(){
-    return new HugoKalidas\FlexCms\Layouts\LayoutsRepository( new HugoKalidas\FlexCms\Layouts\Layouts );
+App::bind('HugoKalidas\LaravelFlexCms\Layouts\LayoutsInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Layouts\LayoutsRepository( new HugoKalidas\LaravelFlexCms\Layouts\Layouts );
 });
 
 // The Containers Bindings
-App::bind('HugoKalidas\FlexCms\Containers\ContainersInterface', function(){
-    return new HugoKalidas\FlexCms\Containers\ContainersRepository( new HugoKalidas\FlexCms\Containers\Containers );
+App::bind('HugoKalidas\LaravelFlexCms\Containers\ContainersInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Containers\ContainersRepository( new HugoKalidas\LaravelFlexCms\Containers\Containers );
 });
 
 
 // The Menus Bindings
-App::bind('HugoKalidas\FlexCms\Menus\MenusInterface', function(){
-    return new HugoKalidas\FlexCms\Menus\MenusRepository( new HugoKalidas\FlexCms\Menus\Menus );
+App::bind('HugoKalidas\LaravelFlexCms\Menus\MenusInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Menus\MenusRepository( new HugoKalidas\LaravelFlexCms\Menus\Menus );
 });
 
 // The Tags Bindings
-App::bind('HugoKalidas\FlexCms\Tags\TagsInterface', function(){
-    return new HugoKalidas\FlexCms\Tags\TagsRepository( new HugoKalidas\FlexCms\Tags\Tags );
+App::bind('HugoKalidas\LaravelFlexCms\Tags\TagsInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Tags\TagsRepository( new HugoKalidas\LaravelFlexCms\Tags\Tags );
 });
 
 // The Uploads Bindings
-App::bind('HugoKalidas\FlexCms\Uploads\UploadsInterface', function(){
-    return new HugoKalidas\FlexCms\Uploads\UploadsRepository( new HugoKalidas\FlexCms\Uploads\Uploads );
+App::bind('HugoKalidas\LaravelFlexCms\Uploads\UploadsInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Uploads\UploadsRepository( new HugoKalidas\LaravelFlexCms\Uploads\Uploads );
 });
 
 // The Galleries Bindings
-App::bind('HugoKalidas\FlexCms\Galleries\GalleriesInterface', function(){
-    return new HugoKalidas\FlexCms\Galleries\GalleriesRepository( new HugoKalidas\FlexCms\Galleries\Galleries );
+App::bind('HugoKalidas\LaravelFlexCms\Galleries\GalleriesInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\Galleries\GalleriesRepository( new HugoKalidas\LaravelFlexCms\Galleries\Galleries );
 });
 
 // The Classes Bindings
-App::bind('HugoKalidas\FlexCms\ElementClasses\ElementClassesInterface', function(){
-    return new HugoKalidas\FlexCms\ElementClasses\ElementClassesRepository( new HugoKalidas\FlexCms\ElementClasses\ElementClasses );
+App::bind('HugoKalidas\LaravelFlexCms\ElementClasses\ElementClassesInterface', function(){
+    return new HugoKalidas\LaravelFlexCms\ElementClasses\ElementClassesRepository( new HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses );
 });

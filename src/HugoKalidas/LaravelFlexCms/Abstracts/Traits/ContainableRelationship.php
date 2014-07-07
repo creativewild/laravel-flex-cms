@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts\Traits;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts\Traits;
 
 use Input;
 
@@ -11,7 +11,7 @@ trait ContainableRelationship
      */
     public function containers()
     {
-        return $this->belongsTo( 'HugoKalidas\FlexCms\Containers\Containers');
+        return $this->belongsTo( 'HugoKalidas\LaravelFlexCms\Containers\Containers');
     }
 
     public function saveContainers($container)

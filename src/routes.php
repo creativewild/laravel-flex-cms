@@ -14,10 +14,10 @@ Route::get('/', function()
 
 
 
-Route::get('admin/login'               , 'HugoKalidas\FlexCms\Controllers\DashController@getLogin'  );
-Route::post('admin/login'               , 'HugoKalidas\FlexCms\Controllers\DashController@postLogin'  );
-Route::post('/newsletter'               , 'HugoKalidas\FlexCms\Controllers\NewlettersController@postSubscribe'  );
-Route::post('/contactar'               , 'HugoKalidas\FlexCms\Controllers\UtilitiesController@postContactUs'  );
+Route::get('admin/login'               , 'HugoKalidas\LaravelFlexCms\Controllers\DashController@getLogin'  );
+Route::post('admin/login'               , 'HugoKalidas\LaravelFlexCms\Controllers\DashController@postLogin'  );
+Route::post('/newsletter'               , 'HugoKalidas\LaravelFlexCms\Controllers\NewlettersController@postSubscribe'  );
+Route::post('/contactar'               , 'HugoKalidas\LaravelFlexCms\Controllers\UtilitiesController@postContactUs'  );
 
 
 
@@ -31,29 +31,29 @@ Route::group(array('before' => 'auth'), function()
     }));
     //end debug
 
-Route::post('admin/saveAsset'               , 'HugoKalidas\FlexCms\Controllers\UtilitiesController@saveAsset'  );
-Route::post('addClass'               , 'HugoKalidas\FlexCms\Controllers\UtilitiesController@addClass'  );
+Route::post('admin/saveAsset'               , 'HugoKalidas\LaravelFlexCms\Controllers\UtilitiesController@saveAsset'  );
+Route::post('addClass'               , 'HugoKalidas\LaravelFlexCms\Controllers\UtilitiesController@addClass'  );
 $urlSegment = Config::get('laravel-flex-cms::app.access_url');
 
 //todo clean and refactor
-Route::post('detach-column','HugoKalidas\FlexCms\Controllers\UtilitiesController@postDetachColumn');
-Route::post('attach-model','HugoKalidas\FlexCms\Controllers\UtilitiesController@postAttachModel');
-Route::post('add-column','HugoKalidas\FlexCms\Controllers\UtilitiesController@postAddColumn');
+Route::post('detach-column','HugoKalidas\LaravelFlexCms\Controllers\UtilitiesController@postDetachColumn');
+Route::post('attach-model','HugoKalidas\LaravelFlexCms\Controllers\UtilitiesController@postAttachModel');
+Route::post('add-column','HugoKalidas\LaravelFlexCms\Controllers\UtilitiesController@postAddColumn');
 
-Route::controller( $urlSegment.'/globals'     , 'HugoKalidas\FlexCms\Controllers\GlobalsController' );
-Route::controller( $urlSegment.'/foo'     , 'HugoKalidas\FlexCms\Controllers\FooController' );
-Route::controller( $urlSegment.'/users'     , 'HugoKalidas\FlexCms\Controllers\UsersController' );
-Route::controller( $urlSegment.'/galleries' , 'HugoKalidas\FlexCms\Controllers\GalleriesController' );
-Route::controller( $urlSegment.'/settings'  , 'HugoKalidas\FlexCms\Controllers\SettingsController' );
-Route::controller( $urlSegment.'/blocks'    , 'HugoKalidas\FlexCms\Controllers\BlocksController' );
-Route::controller( $urlSegment.'/posts'     , 'HugoKalidas\FlexCms\Controllers\PostsController' );
-Route::controller( $urlSegment.'/pages'     , 'HugoKalidas\FlexCms\Controllers\PagesController' );
-Route::controller( $urlSegment.'/assets'     , 'HugoKalidas\FlexCms\Controllers\AssetsController' );
-Route::controller( $urlSegment.'/menus'     , 'HugoKalidas\FlexCms\Controllers\MenusController' );
-Route::controller( $urlSegment.'/pageLayouts'     , 'HugoKalidas\FlexCms\Controllers\LayoutsController' );
-Route::controller( $urlSegment.'/containers'     , 'HugoKalidas\FlexCms\Controllers\ContainersController' );
-Route::controller( $urlSegment.'/newsletters'     , 'HugoKalidas\FlexCms\Controllers\NewslettersController' );
-Route::controller( $urlSegment              , 'HugoKalidas\FlexCms\Controllers\DashController'  );
+Route::controller( $urlSegment.'/globals'     , 'HugoKalidas\LaravelFlexCms\Controllers\GlobalsController' );
+Route::controller( $urlSegment.'/foo'     , 'HugoKalidas\LaravelFlexCms\Controllers\FooController' );
+Route::controller( $urlSegment.'/users'     , 'HugoKalidas\LaravelFlexCms\Controllers\UsersController' );
+Route::controller( $urlSegment.'/galleries' , 'HugoKalidas\LaravelFlexCms\Controllers\GalleriesController' );
+Route::controller( $urlSegment.'/settings'  , 'HugoKalidas\LaravelFlexCms\Controllers\SettingsController' );
+Route::controller( $urlSegment.'/blocks'    , 'HugoKalidas\LaravelFlexCms\Controllers\BlocksController' );
+Route::controller( $urlSegment.'/posts'     , 'HugoKalidas\LaravelFlexCms\Controllers\PostsController' );
+Route::controller( $urlSegment.'/pages'     , 'HugoKalidas\LaravelFlexCms\Controllers\PagesController' );
+Route::controller( $urlSegment.'/assets'     , 'HugoKalidas\LaravelFlexCms\Controllers\AssetsController' );
+Route::controller( $urlSegment.'/menus'     , 'HugoKalidas\LaravelFlexCms\Controllers\MenusController' );
+Route::controller( $urlSegment.'/pageLayouts'     , 'HugoKalidas\LaravelFlexCms\Controllers\LayoutsController' );
+Route::controller( $urlSegment.'/containers'     , 'HugoKalidas\LaravelFlexCms\Controllers\ContainersController' );
+Route::controller( $urlSegment.'/newsletters'     , 'HugoKalidas\LaravelFlexCms\Controllers\NewslettersController' );
+Route::controller( $urlSegment              , 'HugoKalidas\LaravelFlexCms\Controllers\DashController'  );
 
 });
 
@@ -65,9 +65,9 @@ foreach($languages as $language)
     {
 
 
-        Route::get ('/galeria', 'HugoKalidas\FlexCms\Controllers\MainController@getGaleriasIndex');
-        Route::get ('/galeria/{id}', 'HugoKalidas\FlexCms\Controllers\MainController@getGaleria');
-        Route::any ('/{key}', 'HugoKalidas\FlexCms\Controllers\MainController@getIndex');
+        Route::get ('/galeria', 'HugoKalidas\LaravelFlexCms\Controllers\MainController@getGaleriasIndex');
+        Route::get ('/galeria/{id}', 'HugoKalidas\LaravelFlexCms\Controllers\MainController@getGaleria');
+        Route::any ('/{key}', 'HugoKalidas\LaravelFlexCms\Controllers\MainController@getIndex');
 
     });
 }

@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts;
 use Illuminate\Support\MessageBag;
 use Validator;
 

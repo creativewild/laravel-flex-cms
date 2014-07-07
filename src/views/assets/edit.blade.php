@@ -48,12 +48,12 @@
 <div class="form-group">
     <div style="display:none" class="input-group assetAssociation">
         <span class="input-group-addon ">Pages</span>
-        <?php $pages = HugoKalidas\FlexCms\Pages\Pages::lists('title','id') ?>
+        <?php $pages = HugoKalidas\LaravelFlexCms\Pages\Pages::lists('title','id') ?>
         {{ Form::select('AssetsPage[]', $pages, Input::old('AssetsPage[]'), ['multiple' => true, 'class' => 'chosen-select']) }}
 
 
         <span class="input-group-addon ">Blocks</span>
-        <?php $blocks = HugoKalidas\FlexCms\Blocks\Blocks::lists('title','id') ?>
+        <?php $blocks = HugoKalidas\LaravelFlexCms\Blocks\Blocks::lists('title','id') ?>
 
         {{ Form::select('AssetsBlocks[]', $blocks, Input::old('blocks_id'), ['multiple' => true, 'class' => 'chosen-select']) }}
 

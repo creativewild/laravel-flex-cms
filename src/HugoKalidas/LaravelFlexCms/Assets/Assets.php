@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Assets;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
+<?php namespace HugoKalidas\LaravelFlexCms\Assets;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
 
 class Assets  extends EloquentBaseModel
 {
@@ -31,12 +31,12 @@ class Assets  extends EloquentBaseModel
 
     public function blocks()
     {
-        return $this->morphedByMany('HugoKalidas\FlexCms\Blocks\Blocks', 'assetable');
+        return $this->morphedByMany('HugoKalidas\LaravelFlexCms\Blocks\Blocks', 'assetable');
     }
 
     public function pages()
     {
-        return $this->morphedByMany('HugoKalidas\FlexCms\Pages\Pages', 'assetable');
+        return $this->morphedByMany('HugoKalidas\LaravelFlexCms\Pages\Pages', 'assetable');
     }
 
 

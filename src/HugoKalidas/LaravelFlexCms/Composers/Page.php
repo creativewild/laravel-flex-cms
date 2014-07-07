@@ -1,5 +1,5 @@
 <?php
-namespace HugoKalidas\FlexCms\Composers;
+namespace HugoKalidas\LaravelFlexCms\Composers;
 use Illuminate\Support\MessageBag;
 use Auth, Session, Config, App;
 
@@ -12,7 +12,7 @@ class Page{
      */
     public function compose($view)
     {
-        $settings = App::make('HugoKalidas\FlexCms\Settings\SettingsInterface');
+        $settings = App::make('HugoKalidas\LaravelFlexCms\Settings\SettingsInterface');
 
         $view->with('user', Auth::user())
              ->with('app_name', $settings->getAppName() )

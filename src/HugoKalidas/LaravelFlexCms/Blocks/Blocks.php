@@ -1,10 +1,10 @@
-<?php namespace HugoKalidas\FlexCms\Blocks;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRelationship;
-use HugoKalidas\FlexCms\Abstracts\Traits\UploadableRelationship;
-use HugoKalidas\FlexCms\Abstracts\Traits\LayoutableRelationship;
-use HugoKalidas\FlexCms\Abstracts\Traits\AssetableRelationship;
-use HugoKalidas\FlexCms\Posts\Posts;
+<?php namespace HugoKalidas\LaravelFlexCms\Blocks;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRelationship;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\UploadableRelationship;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\LayoutableRelationship;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\AssetableRelationship;
+use HugoKalidas\LaravelFlexCms\Posts\Posts;
 
 class Blocks extends EloquentBaseModel
 {
@@ -46,19 +46,19 @@ class Blocks extends EloquentBaseModel
     ];
 
     public function posts() {
-        return $this->belongsToMany('HugoKalidas\FlexCms\Posts\Posts')->orderBy('blocks_posts.id', 'asc');
+        return $this->belongsToMany('HugoKalidas\LaravelFlexCms\Posts\Posts')->orderBy('blocks_posts.id', 'asc');
     }
 
     public function pages() {
-        return $this->belongsToMany('HugoKalidas\FlexCms\Pages\Pages', 'pages_blocks');
+        return $this->belongsToMany('HugoKalidas\LaravelFlexCms\Pages\Pages', 'pages_blocks');
     }
 
     public function columns() {
-        return $this->belongsToMany('HugoKalidas\FlexCms\Columns\Columns')->withPivot('pages_id');
+        return $this->belongsToMany('HugoKalidas\LaravelFlexCms\Columns\Columns')->withPivot('pages_id');
     }
 
     public function containers() {
-        return $this->belongsTo('HugoKalidas\FlexCms\Containers\Containers');
+        return $this->belongsTo('HugoKalidas\LaravelFlexCms\Containers\Containers');
     }
 
 

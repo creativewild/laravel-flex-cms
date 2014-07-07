@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Settings;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Settings;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 use Config;
 
 class SettingsRepository extends EloquentBaseRepository implements SettingsInterface

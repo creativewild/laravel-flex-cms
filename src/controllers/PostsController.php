@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Posts\PostsInterface;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Posts\PostsInterface;
 use Input, Redirect, Str, View;
 use Illuminate\Support\MessageBag;
 class PostsController extends ObjectBaseController {

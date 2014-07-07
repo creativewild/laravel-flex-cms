@@ -1,7 +1,7 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
 use Illuminate\Support\MessageBag;
 use View, Redirect, Input, App, ReflectionClass, Request, Config, Response, Session;
-use HugoKalidas\FlexCms\Core\Exceptions\EntityNotFoundException;
+use HugoKalidas\LaravelFlexCms\Core\Exceptions\EntityNotFoundException;
 
 abstract class ObjectBaseController extends BaseController {
 
@@ -78,7 +78,7 @@ abstract class ObjectBaseController extends BaseController {
     public function __construct()
     {
         parent::__construct();
-        $this->uploads_model = App::make('HugoKalidas\FlexCms\Uploads\UploadsInterface');
+        $this->uploads_model = App::make('HugoKalidas\LaravelFlexCms\Uploads\UploadsInterface');
 
         $this->setHandyUrls();
         $this->shareHandyUrls();

@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Layouts;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Layouts;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 
 class LayoutsRepository extends EloquentBaseRepository implements LayoutsInterface
 {

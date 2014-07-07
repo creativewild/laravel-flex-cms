@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Galleries;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Galleries;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRepository;
 
 class GalleriesRepository extends EloquentBaseRepository implements GalleriesInterface
 {

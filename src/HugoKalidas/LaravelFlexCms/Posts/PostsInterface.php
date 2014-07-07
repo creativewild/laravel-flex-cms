@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Posts;
+<?php namespace HugoKalidas\LaravelFlexCms\Posts;
 
 interface PostsInterface {
 

@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Menus;
+<?php namespace HugoKalidas\LaravelFlexCms\Menus;
 
 interface MenusInterface {
 

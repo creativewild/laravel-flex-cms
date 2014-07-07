@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Validators;
-use HugoKalidas\FlexCms\Abstracts\ValidatorBase;
+<?php namespace HugoKalidas\LaravelFlexCms\Validators;
+use HugoKalidas\LaravelFlexCms\Abstracts\ValidatorBase;
 
 class Login extends ValidatorBase
 {

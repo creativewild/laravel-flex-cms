@@ -1,7 +1,7 @@
 <?php
-namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Globals\GlobalsInterface;
-use HugoKalidas\FlexCms\Globals\Globals;
+namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Globals\GlobalsInterface;
+use HugoKalidas\LaravelFlexCms\Globals\Globals;
 use View;
 
 

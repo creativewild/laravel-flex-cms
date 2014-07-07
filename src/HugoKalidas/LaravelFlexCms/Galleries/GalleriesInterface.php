@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Galleries;
+<?php namespace HugoKalidas\LaravelFlexCms\Galleries;
 
 interface GalleriesInterface {
     

@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
 use Illuminate\Support\MessageBag;
-use HugoKalidas\FlexCms\Settings\SettingsInterface;
+use HugoKalidas\LaravelFlexCms\Settings\SettingsInterface;
 use Input, Redirect;
 
 class SettingsController extends ObjectBaseController {

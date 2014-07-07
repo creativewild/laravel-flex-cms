@@ -33,7 +33,7 @@
 
             <?php
             //Todo pass the model
-            $pages = HugoKalidas\FlexCms\Pages\Pages::where('id','<>','1')->lists('title','id');
+            $pages = HugoKalidas\LaravelFlexCms\Pages\Pages::where('id','<>','1')->lists('title','id');
 
             ?>
 

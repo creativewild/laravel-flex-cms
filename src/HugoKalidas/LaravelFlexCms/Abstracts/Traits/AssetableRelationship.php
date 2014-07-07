@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts\Traits;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts\Traits;
 
 use Input;
 
@@ -11,7 +11,7 @@ trait AssetableRelationship
      */
     public function assets()
     {
-        return $this->morphToMany('HugoKalidas\FlexCms\Assets\Assets' , 'assetable');
+        return $this->morphToMany('HugoKalidas\LaravelFlexCms\Assets\Assets' , 'assetable');
     }
 
 

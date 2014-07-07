@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Galleries\GalleriesInterface;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Galleries\GalleriesInterface;
 
 class GalleriesController extends ObjectBaseController {
 

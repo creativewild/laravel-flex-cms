@@ -127,7 +127,7 @@
 
         <?php
         //Todo pass the model
-        $elClasses = HugoKalidas\FlexCms\ElementClasses\ElementClasses::lists('html_class','id');
+        $elClasses = HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses::lists('html_class','id');
 
         ?>
 

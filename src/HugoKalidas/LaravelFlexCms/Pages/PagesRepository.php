@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Pages;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Pages;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 
 class PagesRepository extends EloquentBaseRepository implements PagesInterface
 {

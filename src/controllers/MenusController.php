@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Menus\MenusInterface;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Menus\MenusInterface;
 
 class MenusController extends ObjectBaseController {
 

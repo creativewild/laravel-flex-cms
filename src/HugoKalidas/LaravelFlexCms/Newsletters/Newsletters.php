@@ -1,7 +1,7 @@
-<?php namespace HugoKalidas\FlexCms\Newsletters;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
+<?php namespace HugoKalidas\LaravelFlexCms\Newsletters;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
 
-use HugoKalidas\FlexCms\Abstracts\Traits\UploadableRelationship;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\UploadableRelationship;
 
 use Str, Input;
 

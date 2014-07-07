@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Columns;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Columns;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 
 class ColumnsRepository extends EloquentBaseRepository implements ColumnsInterface
 {

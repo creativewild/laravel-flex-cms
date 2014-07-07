@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Tags;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Tags;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 
 class TagsRepository extends EloquentBaseRepository implements TagsInterface
 {

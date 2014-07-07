@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Filters;
+<?php namespace HugoKalidas\LaravelFlexCms\Filters;
 use Auth, Redirect, Config;
 
 class Admin {

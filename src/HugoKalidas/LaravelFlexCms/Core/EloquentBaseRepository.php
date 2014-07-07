@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Core;
-use HugoKalidas\FlexCms\Core\Exceptions\EntityNotFoundException;
+<?php namespace HugoKalidas\LaravelFlexCms\Core;
+use HugoKalidas\LaravelFlexCms\Core\Exceptions\EntityNotFoundException;
 
 /**
  * Base Eloquent Repository Class Built On From Shawn McCool <-- This guy is pretty amazing

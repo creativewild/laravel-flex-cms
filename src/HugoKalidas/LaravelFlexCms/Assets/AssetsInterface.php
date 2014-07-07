@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Assets;
+<?php namespace HugoKalidas\LaravelFlexCms\Assets;
 
 interface AssetsInterface {
 

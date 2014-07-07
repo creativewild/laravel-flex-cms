@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts\Traits;
-use HugoKalidas\FlexCms\Tags\Tags as TagEloquent;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts\Traits;
+use HugoKalidas\LaravelFlexCms\Tags\Tags as TagEloquent;
 use Input;
 
 trait TaggableRelationship
@@ -11,7 +11,7 @@ trait TaggableRelationship
      */
     public function tags()
     {
-        return $this->morphMany( 'HugoKalidas\FlexCms\Tags\Tags' , 'taggable' );
+        return $this->morphMany( 'HugoKalidas\LaravelFlexCms\Tags\Tags' , 'taggable' );
     }
 
     /**

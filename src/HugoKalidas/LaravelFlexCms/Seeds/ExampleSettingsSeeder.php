@@ -1,5 +1,5 @@
 <?php
-namespace HugoKalidas\FlexCms\Seeds;
+namespace HugoKalidas\LaravelFlexCms\Seeds;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Config;

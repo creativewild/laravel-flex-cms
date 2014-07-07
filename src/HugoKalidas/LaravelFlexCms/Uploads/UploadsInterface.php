@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Uploads;
+<?php namespace HugoKalidas\LaravelFlexCms\Uploads;
 
 interface UploadsInterface {
 

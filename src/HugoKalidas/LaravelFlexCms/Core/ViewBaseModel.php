@@ -6,7 +6,7 @@
  * Time: 5:06 PM
  */
 
-namespace HugoKalidas\FlexCms\Core;
+namespace HugoKalidas\LaravelFlexCms\Core;
 
 /**
  * Base model for allowing reads from sql views

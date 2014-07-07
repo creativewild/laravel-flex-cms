@@ -1,8 +1,8 @@
-<?php namespace HugoKalidas\FlexCms\Posts;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRelationship;
-use HugoKalidas\FlexCms\Abstracts\Traits\UploadableRelationship;
-use HugoKalidas\FlexCms\Abstracts\Traits\ClassableRelationship;
+<?php namespace HugoKalidas\LaravelFlexCms\Posts;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRelationship;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\UploadableRelationship;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\ClassableRelationship;
 use Str, Input;
 
 class Posts extends EloquentBaseModel

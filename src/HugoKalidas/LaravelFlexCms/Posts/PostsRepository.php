@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Posts;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Posts;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRepository;
 
 class PostsRepository extends EloquentBaseRepository implements PostsInterface
 {

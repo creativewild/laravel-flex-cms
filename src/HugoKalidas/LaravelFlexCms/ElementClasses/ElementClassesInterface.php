@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\ElementClasses;
+<?php namespace HugoKalidas\LaravelFlexCms\ElementClasses;
 
 interface ElementClassesInterface {
     

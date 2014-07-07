@@ -1,9 +1,9 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Containers\ContainersInterface;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Containers\ContainersInterface;
 use Illuminate\Support\MessageBag;
-use HugoKalidas\FlexCms\Containers\Containers as Containers;
-use HugoKalidas\FlexCms\Columns\Columns as Column;
-use HugoKalidas\FlexCms\ElementClasses\ElementClasses as ElClasses;
+use HugoKalidas\LaravelFlexCms\Containers\Containers as Containers;
+use HugoKalidas\LaravelFlexCms\Columns\Columns as Column;
+use HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses as ElClasses;
 use View, Redirect, Input, App, ReflectionClass, Request, Config, Response, Session;
 class ContainersController extends ObjectBaseController {
 

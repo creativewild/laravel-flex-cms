@@ -1,7 +1,7 @@
-<?php namespace HugoKalidas\FlexCms\Containers;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
-use HugoKalidas\FlexCms\Abstracts\Traits\ClassableRelationship;
-use HugoKalidas\FlexCms\Columns\Columns as Columns;
+<?php namespace HugoKalidas\LaravelFlexCms\Containers;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\ClassableRelationship;
+use HugoKalidas\LaravelFlexCms\Columns\Columns as Columns;
 
 class Containers  extends EloquentBaseModel
 {
@@ -27,15 +27,15 @@ class Containers  extends EloquentBaseModel
 
 
     public function blocks(){
-       return $this->hasMany('HugoKalidas\FlexCms\Blocks\Blocks');
+       return $this->hasMany('HugoKalidas\LaravelFlexCms\Blocks\Blocks');
     }
 
     public function layouts(){
-        return $this->belongsTo('HugoKalidas\FlexCms\Layouts\Layouts');
+        return $this->belongsTo('HugoKalidas\LaravelFlexCms\Layouts\Layouts');
     }
 
     public function columns(){
-        return $this->hasMany('HugoKalidas\FlexCms\Columns\Columns');
+        return $this->hasMany('HugoKalidas\LaravelFlexCms\Columns\Columns');
     }
 
     //lame helpers

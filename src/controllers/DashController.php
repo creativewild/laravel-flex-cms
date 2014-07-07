@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
 use Illuminate\Support\MessageBag;
-use HugoKalidas\FlexCms\Validators\Login;
+use HugoKalidas\LaravelFlexCms\Validators\Login;
 use View, Auth, Redirect, Validator, Session, Input;
 
 class DashController extends BaseController {

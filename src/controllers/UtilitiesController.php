@@ -6,24 +6,24 @@
  * Time: 11:50 AM
  */
 
-namespace HugoKalidas\FlexCms\Controllers;
+namespace HugoKalidas\LaravelFlexCms\Controllers;
 use Illuminate\Support\MessageBag;
 use View, Redirect, Input, App, Request, Config, Response, Session, Mail, URL, Validator;
 
-use HugoKalidas\FlexCms\Blocks\Blocks as Blocks ;
-use HugoKalidas\FlexCms\Columns\Columns as Columns ;
-use HugoKalidas\FlexCms\ElementClasses\ElementClasses as HTMLCLASS;
+use HugoKalidas\LaravelFlexCms\Blocks\Blocks as Blocks ;
+use HugoKalidas\LaravelFlexCms\Columns\Columns as Columns ;
+use HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses as HTMLCLASS;
 use Empresa as Empresa;
 
 
 class UtilitiesController extends BaseController {
 
     private static $dataModels = array(
-                                'Blocks' =>     'HugoKalidas\FlexCms\Blocks\Blocks',
-                                'Columns' =>    'HugoKalidas\FlexCms\Columns\Columns',
-                                'Posts' =>      'HugoKalidas\FlexCms\Posts\Posts',
-                                'Menus' =>      'HugoKalidas\FlexCms\Menus\Menus',
-                                'Containers' => 'HugoKalidas\FlexCms\Containers\Containers',
+                                'Blocks' =>     'HugoKalidas\LaravelFlexCms\Blocks\Blocks',
+                                'Columns' =>    'HugoKalidas\LaravelFlexCms\Columns\Columns',
+                                'Posts' =>      'HugoKalidas\LaravelFlexCms\Posts\Posts',
+                                'Menus' =>      'HugoKalidas\LaravelFlexCms\Menus\Menus',
+                                'Containers' => 'HugoKalidas\LaravelFlexCms\Containers\Containers',
                                  'Empresa' => 'Empresa'
     );
 

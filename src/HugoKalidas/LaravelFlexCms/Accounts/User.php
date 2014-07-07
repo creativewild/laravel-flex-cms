@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Accounts;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
+<?php namespace HugoKalidas\LaravelFlexCms\Accounts;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
 use Illuminate\Auth\UserInterface as LaravelUserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 use Hash;

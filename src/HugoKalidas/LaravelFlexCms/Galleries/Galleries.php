@@ -1,7 +1,7 @@
-<?php namespace HugoKalidas\FlexCms\Galleries;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRelationship;
-use HugoKalidas\FlexCms\Abstracts\Traits\UploadableRelationship;
+<?php namespace HugoKalidas\LaravelFlexCms\Galleries;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRelationship;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\UploadableRelationship;
 
 class Galleries extends EloquentBaseModel
 {

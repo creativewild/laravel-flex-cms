@@ -28,7 +28,7 @@
 
             <span class="input-group-addon">Block Container</span>
              <?php $cont = array(null=>'--');
-                    $containers=HugoKalidas\FlexCms\Containers\Containers::lists('title','id');
+                    $containers=HugoKalidas\LaravelFlexCms\Containers\Containers::lists('title','id');
              $containers[null]= '--';
 
                  ?>
@@ -48,7 +48,7 @@
 <div class="form-group">
     <div class="input-group">
         <span class="input-group-addon">Posts</span>
-        <?php $posts = HugoKalidas\FlexCms\Posts\Posts::lists('title','id');
+        <?php $posts = HugoKalidas\LaravelFlexCms\Posts\Posts::lists('title','id');
 
 
         $storedPosts = $item->posts()->lists('posts_id');

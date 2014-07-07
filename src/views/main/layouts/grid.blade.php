@@ -25,7 +25,7 @@
                 @foreach ($column->blocks()->wherePivot('pages_id','=',$page->id)->get() as $block)
                         {{-- */
                     if ($block->type=="Recent") {
-                    $posts=HugoKalidas\FlexCms\Posts\Posts::where('type','=','article')->orderBy('created_at','DESC')->get();
+                    $posts=HugoKalidas\LaravelFlexCms\Posts\Posts::where('type','=','article')->orderBy('created_at','DESC')->get();
                     }
                     else $posts = $block->posts()->get();
 

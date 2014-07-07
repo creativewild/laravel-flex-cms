@@ -1,6 +1,6 @@
-<?php namespace HugoKalidas\FlexCms\Menus;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
-use HugoKalidas\FlexCms\Abstracts\Traits\TaggableRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Menus;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
+use HugoKalidas\LaravelFlexCms\Abstracts\Traits\TaggableRepository;
 
 class MenusRepository extends EloquentBaseRepository implements MenusInterface
 {

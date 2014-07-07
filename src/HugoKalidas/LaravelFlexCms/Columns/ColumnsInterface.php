@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Columns;
+<?php namespace HugoKalidas\LaravelFlexCms\Columns;
 
 interface ColumnsInterface {
     

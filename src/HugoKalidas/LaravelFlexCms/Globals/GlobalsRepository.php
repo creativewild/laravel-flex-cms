@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Globals;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Globals;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 
 
 class GlobalsRepository extends EloquentBaseRepository implements GlobalsInterface

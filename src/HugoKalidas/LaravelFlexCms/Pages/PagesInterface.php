@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Pages;
+<?php namespace HugoKalidas\LaravelFlexCms\Pages;
 
 interface PagesInterface {
 

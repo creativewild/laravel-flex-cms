@@ -51,7 +51,7 @@
 
         <?php
 
-            $blocks = HugoKalidas\FlexCms\Blocks\Blocks::lists('title','id');
+            $blocks = HugoKalidas\LaravelFlexCms\Blocks\Blocks::lists('title','id');
             $storedBlocks = $item->blocks();
         ?>
 
@@ -68,7 +68,7 @@
 
         <?php
         //Todo pass the model
-        $layouts = HugoKalidas\FlexCms\Layouts\Layouts::lists('title','id')
+        $layouts = HugoKalidas\LaravelFlexCms\Layouts\Layouts::lists('title','id')
 
         ?>
         <span class="input-group-addon">Page Layout</span>
@@ -87,8 +87,8 @@
 <div class="tab-pane" id="tabs">
     <div class="panel panel-default">
         <div class="panel-body">
-            <?php $nlayouts = HugoKalidas\FlexCms\Layouts\Layouts::with('containers.columns')->get()->toArray();
-            $layouts = HugoKalidas\FlexCms\Layouts\Layouts::lists('id','id')
+            <?php $nlayouts = HugoKalidas\LaravelFlexCms\Layouts\Layouts::with('containers.columns')->get()->toArray();
+            $layouts = HugoKalidas\LaravelFlexCms\Layouts\Layouts::lists('id','id')
             ?>
             <div class="form-group">
                 <div class="input-group">

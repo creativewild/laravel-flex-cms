@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Layouts;
+<?php namespace HugoKalidas\LaravelFlexCms\Layouts;
 
 interface LayoutsInterface {
     

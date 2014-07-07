@@ -1,7 +1,7 @@
-<?php namespace HugoKalidas\FlexCms\Controllers;
-use HugoKalidas\FlexCms\Accounts\User;
-use HugoKalidas\FlexCms\Newsletters\NewslettersInterface;
-use HugoKalidas\FlexCms\Newsletters\Newsletters;
+<?php namespace HugoKalidas\LaravelFlexCms\Controllers;
+use HugoKalidas\LaravelFlexCms\Accounts\User;
+use HugoKalidas\LaravelFlexCms\Newsletters\NewslettersInterface;
+use HugoKalidas\LaravelFlexCms\Newsletters\Newsletters;
 use Input, Redirect, Str, View, Mail;
 use Illuminate\Support\MessageBag;
 class NewslettersController extends ObjectBaseController {

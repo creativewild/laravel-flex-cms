@@ -1,5 +1,5 @@
 <?php
-namespace HugoKalidas\FlexCms\Controllers;
+namespace HugoKalidas\LaravelFlexCms\Controllers;
 use Illuminate\Routing\Controller;
 use View, Config;
 
@@ -27,7 +27,7 @@ abstract class BaseController extends Controller{
         // Setup composed views and the variables that they require
         //$this->beforeFilter( 'adminFilter' , array('except' => $this->whitelist) );
         $composed_views = array( 'laravel-flex-cms::*' );
-        View::composer($composed_views, 'HugoKalidas\FlexCms\Composers\Page');
+        View::composer($composed_views, 'HugoKalidas\LaravelFlexCms\Composers\Page');
     }
 
 }

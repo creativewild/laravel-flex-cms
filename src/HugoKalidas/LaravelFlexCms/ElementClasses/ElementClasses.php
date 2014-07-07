@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\ElementClasses;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
+<?php namespace HugoKalidas\LaravelFlexCms\ElementClasses;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
 
 class ElementClasses  extends EloquentBaseModel
 {
@@ -24,12 +24,12 @@ class ElementClasses  extends EloquentBaseModel
 
     public function layouts()
     {
-        return $this->morphedByMany('HugoKalidas\FlexCms\Layouts\Layouts', 'classable');
+        return $this->morphedByMany('HugoKalidas\LaravelFlexCms\Layouts\Layouts', 'classable');
     }
 
     public function columns()
     {
-        return $this->morphedByMany('HugoKalidas\FlexCms\Columns\Columns', 'classable');
+        return $this->morphedByMany('HugoKalidas\LaravelFlexCms\Columns\Columns', 'classable');
     }
 
 }

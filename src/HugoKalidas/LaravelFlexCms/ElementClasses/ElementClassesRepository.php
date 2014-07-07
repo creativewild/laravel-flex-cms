@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\ElementClasses;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\ElementClasses;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 
 class ElementClassesRepository extends EloquentBaseRepository implements ElementClassesInterface
 {

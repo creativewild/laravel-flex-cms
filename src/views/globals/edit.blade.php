@@ -25,7 +25,7 @@
 
         <?php
 
-            $blocks = HugoKalidas\FlexCms\Blocks\Blocks::lists('title','id');
+            $blocks = HugoKalidas\LaravelFlexCms\Blocks\Blocks::lists('title','id');
             $storedBlocks = $item->blocks();
         ?>
 
@@ -42,7 +42,7 @@
 
         <?php
         //Todo pass the model to the view
-        $layouts = HugoKalidas\FlexCms\Layouts\Layouts::lists('title','id')
+        $layouts = HugoKalidas\LaravelFlexCms\Layouts\Layouts::lists('title','id')
 
         ?>
         <span class="input-group-addon">Page Layout</span>
@@ -59,8 +59,8 @@
 <div class="tab-pane" id="tabs" >
     <div class="panel panel-default">
         <div class="panel-body">
-            <?php $nlayouts = HugoKalidas\FlexCms\Layouts\Layouts::with('containers.columns')->get()->toArray();
-            $layouts = HugoKalidas\FlexCms\Layouts\Layouts::lists('id','title')
+            <?php $nlayouts = HugoKalidas\LaravelFlexCms\Layouts\Layouts::with('containers.columns')->get()->toArray();
+            $layouts = HugoKalidas\LaravelFlexCms\Layouts\Layouts::lists('id','title')
             ?>
             <div class="form-group">
                 <div class="input-group">
@@ -176,7 +176,7 @@
 
                      @foreach ($nlayout['containers'] as $cont)
                         @foreach ($cont['columns'] as $col)
-                            {{-- */ $column = HugoKalidas\FlexCms\Columns\Columns::find($col['id']);  /* --}}
+                            {{-- */ $column = HugoKalidas\LaravelFlexCms\Columns\Columns::find($col['id']);  /* --}}
                             @if (!is_null($column))
                                 @foreach ($column->blocks()->wherePivot('pages_id','=',$item->id)->get() as $block)
                                     <tr>

@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Settings;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
+<?php namespace HugoKalidas\LaravelFlexCms\Settings;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
 
 class Settings extends EloquentBaseModel
 {

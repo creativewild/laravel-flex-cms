@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\ElementIds;
-use HugoKalidas\FlexCms\Core\EloquentBaseModel;
+<?php namespace HugoKalidas\LaravelFlexCms\ElementIds;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseModel;
 
 class ElementIds  extends EloquentBaseModel
 {

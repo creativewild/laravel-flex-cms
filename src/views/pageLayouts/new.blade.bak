@@ -19,7 +19,7 @@
         <div class="col-lg-4">
             <?php
             //Todo pass the model
-            $elClasses = HugoKalidas\FlexCms\ElementClasses\ElementClasses::lists('html_class','id')
+            $elClasses = HugoKalidas\LaravelFlexCms\ElementClasses\ElementClasses::lists('html_class','id')
 
             ?>
             {{ Form::select("classes[]", array("default" => "container") +  $elClasses, "default" , ["multiple" => true, "class" => "chosen-select"]) }}

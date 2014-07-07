@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Containers;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Containers;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 
 class ContainersRepository extends EloquentBaseRepository implements ContainersInterface
 {

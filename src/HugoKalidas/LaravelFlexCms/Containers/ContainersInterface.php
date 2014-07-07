@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Containers;
+<?php namespace HugoKalidas\LaravelFlexCms\Containers;
 
 interface ContainersInterface {
     

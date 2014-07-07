@@ -1,5 +1,5 @@
-<?php namespace HugoKalidas\FlexCms\Accounts;
-use HugoKalidas\FlexCms\Core\EloquentBaseRepository;
+<?php namespace HugoKalidas\LaravelFlexCms\Accounts;
+use HugoKalidas\LaravelFlexCms\Core\EloquentBaseRepository;
 
 class UserRepository extends EloquentBaseRepository implements UserInterface
 {

@@ -1,4 +1,4 @@
-<?php namespace HugoKalidas\FlexCms\Abstracts\Traits;
+<?php namespace HugoKalidas\LaravelFlexCms\Abstracts\Traits;
 
 use Input;
 
@@ -11,7 +11,7 @@ trait LayoutableRelationship
      */
     public function layouts()
     {
-        return $this->belongsTo( 'HugoKalidas\FlexCms\Layouts\Layouts');
+        return $this->belongsTo( 'HugoKalidas\LaravelFlexCms\Layouts\Layouts');
     }
 
     public function saveLayouts($layout)
