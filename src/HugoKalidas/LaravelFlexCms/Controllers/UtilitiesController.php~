@@ -85,7 +85,7 @@ class UtilitiesController extends BaseController {
         else {
 
 
-                $queryfield=$dataRelation.'_id';
+                $queryfield='element_classes_id';
         }
 
 
