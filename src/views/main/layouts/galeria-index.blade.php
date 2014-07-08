@@ -81,7 +81,7 @@
 
                 </div>
                 </a>
-                {{\hugo\Utilities::truncateHtml( $gallery->description,120)}}
+                {{HugoKalidas\LaravelFlexCms\Utilities\Utilities::truncateHtml( $gallery->description,120)}}
 				</div>
             </div>
            @endif

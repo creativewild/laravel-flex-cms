@@ -87,7 +87,7 @@
                                             @endif
 
                                             @if ($truncate and $post->truncate)
-                                              {{\hugo\Utilities::truncateHtml( $content,$post->truncate_length)}}
+                                              {{HugoKalidas\LaravelFlexCms\Utilities\Utilities::truncateHtml( $content,$post->truncate_length)}}
                                                  @if (isset($articleClass) and  $articleClass != "video")
                                                     <a class="saibaMais" href="/{{$lang}}/{{$post->slug}}">{{$saiba}}</a>
                                                     @else
@@ -152,7 +152,7 @@
                                             @endif
 
                                           @if ($truncate and $post->truncate)
-                                              {{\hugo\Utilities::truncateHtml( $content,$post->truncate_length)}}
+                                              {{HugoKalidas\LaravelFlexCms\Utilities\Utilities::truncateHtml( $content,$post->truncate_length)}}
                                                  @if (isset($articleClass) and  $articleClass != "video")
                                                  <a class="saibaMais" href="/{{$lang}}/{{$post->slug}}">{{$saiba}}</a>
                                                  @else
