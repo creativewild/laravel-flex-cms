@@ -3,7 +3,7 @@
   <div class="container">
     <div class="navbar-brand">
       <a href="/{{$lang}}/home-page">
-        <img src="/images/logo.png" />
+        <img src="/packages/hugo-kalidas/laravel-flex-cms/images/logo.png" />
       </a>
     </div>
 
@@ -14,32 +14,7 @@
     <div class="frase">
       <a>Encontre o que procura com facilidade</a>
     </div>
-         <div class=" Pesquisa">
-                
-                        <div class="formSearch">
-<div class="searchNav">
-<ul class="nav nav-tabs" id="navSearch" role="tablist">
-  <li class="active"><a data-toggle="tab" href="#main" id="activeSearch" role="tab">Nome ou Atividade</a></li>
-  <li><a class="inactive" data-toggle="tab" href="#localidade" role="tab">Localidade</a></li>
-</ul>
 
-<div class="tab-content">
-<div class="tab-pane active" id="main">
-<div class="input-group">
-<form accept-charset="UTF-8" action="http://portal.bidaempresa.pt/pt/diretorio" method="POST"><input name="_token" type="hidden" value="ei3At6E3oTLykpH9FbwU58ty3ajunTXzSpXS4BYn" /> <input class="form-control navDiretorio" name="searchDiretorio" placeholder="pesquise empresas ou atividades" type="text" />&nbsp;</form>
-</div>
-</div>
-
-<div class="tab-pane" id="localidade">
-<div class="input-group"><input class="form-control navDiretorio" name="searchLocalidade" placeholder="pesquise em localidades" type="text" /></div>
-</div>
-</div>
-
-<div class="input-group" id="searchButton"><span class="input-group-addon"><span class="glyphicon glyphicon-search"><input class="form-control" id="pesquisaButton" type="submit" value="" /></span> </span></div>
-</div>
-</div>
-
-            </div>
   </div>
   <div class="cont">
       <div class="container">
