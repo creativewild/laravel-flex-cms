@@ -26,8 +26,8 @@
         {{ Form::label( "type" , 'Type' , array( 'class'=>'col-lg-2 control-label' ) ) }}
         <div class="col-lg-4">
 
-            {{-- */  $item = new HugoKalidas\LaravelFlexCms\Assets\Assets() /* --}}
-            {{ Form::select('type', $item->typeOptions, $item->type, ['class' => 'chosen-select form-control']) }}
+            {{-- */  $item = HugoKalidas\LaravelFlexCms\Assets\Assets::find(4); /* --}}
+            {{ Form::select('postsBlock', $item->typeOptions, Input::old('posts_id'), ['class' => 'chosen-select']) }}
         </div>
         {{ Form::label( "position" , 'Position' , array( 'class'=>'col-lg-1 control-label' ) ) }}
         <div class="col-lg-4">

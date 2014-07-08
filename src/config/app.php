@@ -84,6 +84,12 @@ return array(
             'top'=>true,
             'editor'=>true
         ),
+	'includes'=>array(
+            'name'=>'Includes',
+            'icon'=>'edit',
+            'top'=>true,
+            'editor'=>true
+        ),
 
         'globals'=>array(
             'name'=>'Globals',
@@ -104,13 +110,13 @@ return array(
             'name'=>'Users',
             'icon'=>'user',
             'top'=>true,
-            'editor'=>false
+            'editor'=>true
         ),
         'settings'=>array(
             'name'=>'Settings',
             'icon'=>'cog',
             'top'=>true,
-            'editor'=>false
+            'editor'=>true
         )
     )
 );

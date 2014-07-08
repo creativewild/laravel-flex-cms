@@ -7,10 +7,6 @@ $urlSegment = Config::get('laravel-flex-cms::app.access_url');
 
 
 
-Route::get('/', function()
-{
-    return Redirect::to('pt/home-page');
-});
 
 
 
@@ -53,6 +49,7 @@ Route::controller( $urlSegment.'/menus'     , 'HugoKalidas\LaravelFlexCms\Contro
 Route::controller( $urlSegment.'/pageLayouts'     , 'HugoKalidas\LaravelFlexCms\Controllers\LayoutsController' );
 Route::controller( $urlSegment.'/containers'     , 'HugoKalidas\LaravelFlexCms\Controllers\ContainersController' );
 Route::controller( $urlSegment.'/newsletters'     , 'HugoKalidas\LaravelFlexCms\Controllers\NewslettersController' );
+Route::controller( $urlSegment.'/includes'     , 'HugoKalidas\LaravelFlexCms\Controllers\IncludesController' );
 Route::controller( $urlSegment              , 'HugoKalidas\LaravelFlexCms\Controllers\DashController'  );
 
 });
