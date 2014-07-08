@@ -17,7 +17,8 @@
             {{ Form::text( "title" , Input::old( "title" ) , array( 'class'=>'form-control' , 'placeholder'=>'Menu Title' ) ) }}
 
 
-          
+            <span class="input-group-addon">Key</span>
+            {{ Form::text( "key" , Input::old( "key" ) , array( 'class'=>'form-control' , 'placeholder'=>'Menu Key' ) ) }}
         </div>
     </div>
 @stop

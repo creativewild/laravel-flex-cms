@@ -77,7 +77,7 @@ class UtilitiesController extends BaseController {
 
         }
 
-        if ($dataRelation=='columns') {
+        elseif ($dataRelation=='columns') {
             $queryfield='columns.id';
 
         }
@@ -85,7 +85,7 @@ class UtilitiesController extends BaseController {
         else {
 
 
-                $queryfield=$dataRelation.'_id';
+                $queryfield='element_classes_id';
         }
 
 
@@ -103,7 +103,7 @@ class UtilitiesController extends BaseController {
                     $col->save();
                 }
 
-               // elseif($data['model']=="Columns") Session::put('barista','fuck This');
+               
                 else $obj->$dataRelation()->attach($dataRelated);
             }
         }

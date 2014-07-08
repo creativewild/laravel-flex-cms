@@ -77,7 +77,7 @@ class UtilitiesController extends BaseController {
 
         }
 
-        if ($dataRelation=='columns') {
+        elseif ($dataRelation=='columns') {
             $queryfield='columns.id';
 
         }

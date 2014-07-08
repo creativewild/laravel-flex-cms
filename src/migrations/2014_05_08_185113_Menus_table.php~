@@ -21,8 +21,8 @@ class MenusTable extends Migration {
                 $table->engine = 'InnoDB';
                 $table->increments('id');
                 $table->string('title',255);
-                $table->integer('parent_menu_id')->unsigned()->nullable();
-                $table->foreign('parent_menu_id')->references('id')->on('menus');
+                $table->integer('parent_menu_id')->unsigned()->index();
+                $table->foreign('parent_menu_id')->references('id')->on('menus')->nullable();
                 
 
 
