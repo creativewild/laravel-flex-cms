@@ -37,7 +37,10 @@
                 </div>
             </article>
         </div>
-     {{--   <div class = "col-md-4 pubWrapper">
+
+        {{-- */ $pubPosts=false; /* --}}
+        @if ($pubPosts)
+         <div class = "col-md-4 pubWrapper">
 
             @foreach ($pubPosts as $post)
                 {{-- */ $classStr=""; /* --}}
@@ -61,8 +64,8 @@
                 </article>
             @endforeach
         </div>
+        @endif
 
-	-- }}
     </div>
 
 </div>
