@@ -2,7 +2,7 @@
 <!-- Todo Dynamic Assigment -->
 <html lang="en">
 <head>
-	@include('laravel-flex-cms::main.includes.head') <!-- IncluDES dOCUMENT hEAD-->
+	@include('laravel-flex-cms::main.includes.head', array('tabsl'=>tabsl)) <!-- IncluDES dOCUMENT hEAD-->
 
 </head>
 <body>
@@ -19,6 +19,6 @@
                 <!-- Footer-->
     @include('laravel-flex-cms::main.includes.footer')
                 <!-- Magic-->
-	@include('laravel-flex-cms::main.includes.scripts')
+	@include('laravel-flex-cms::main.includes.scripts', array('tabsl'=>tabsl))
 </body>
 </html>
