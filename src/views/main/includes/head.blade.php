@@ -49,9 +49,10 @@
 @endif
 
 @if (isset($tabsLeft) and $tabsLeft)
+    {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/vertical-tabs.css'))}}
     {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/prettyPhoto.css'))}}
-    {{HTML::style('asset('packages/hugo-kalidas/laravel-flex-cms/css/owl.carousel.css'))}}
-    {{HTML::style('asset('packages/hugo-kalidas/laravel-flex-cms/css/owl.theme.css'))}}
+    {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/owl.carousel.css'))}}
+    {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/owl.theme.css'))}}
 
 @endif
 

@@ -48,7 +48,7 @@ class MainController extends BaseController{
             $tabsLeft=$page->filterBlocks('Tabs-left');
             if ($tabsLeft->count()) $tabsLeft = true;
             else $tabsLeft = false;
-
+            $tabsLeft = true;
 
             //todo add to page
             $truncate=true;

@@ -1,5 +1,14 @@
 /* custom inclusion of right and left  tabs */
 
+.vertical-tabs h3 {
+  color:#FFF;
+  font-size: 24px;
+}
+
+.vertical-tabs p {
+  color:#FFF;
+  text-align:justify;
+}
 
 .tabs-right > .nav-tabs,
 .tabs-left > .nav-tabs {
@@ -16,7 +25,20 @@
   display: block;
 }
 
+.nav-tabs > li.active > a {
+  background-color: #00b4e1;
+  border:none;
+  color:#FFF;
+}
 
+.nav-tabs a {
+  color:#FFF !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #2678a8 !important;
+  border:none !important;
+}
 
 .tabs-left > .nav-tabs > li,
 .tabs-right > .nav-tabs > li {
@@ -30,14 +52,19 @@
   margin-bottom: 3px;
 }
 
+.nav-tabs > li > a  {
+  border:none !important;
+}
+
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;
   border-right: 1px solid #ddd;
+  background:#000;
+  min-height: 400px;
 }
 
 .tabs-left > .nav-tabs > li > a {
-  margin-right: -1px;
   -webkit-border-radius: 4px 0 0 4px;
      -moz-border-radius: 4px 0 0 4px;
           border-radius: 4px 0 0 4px;
@@ -79,3 +106,9 @@
   border-color: #ddd #ddd #ddd transparent;
   *border-left-color: #ffffff;
 }
+
+
+.vertical-tabs .row .col-md-12 {
+  background: url(fundo_tabs.png);
+}
+

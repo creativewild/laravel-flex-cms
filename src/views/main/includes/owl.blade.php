@@ -12,4 +12,5 @@ $images=$post->uploads()->get(); $owl=true; $prettyPhoto=true;
 
         @endforeach
 </div>
+</div>
 
