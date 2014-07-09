@@ -38,7 +38,6 @@
             </article>
         </div>
 
-        {{-- */ $pubPosts=false; /* --}}
         @if ($pubPosts)
          <div class = "col-md-4 pubWrapper">
 

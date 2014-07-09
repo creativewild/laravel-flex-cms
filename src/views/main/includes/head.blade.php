@@ -48,6 +48,13 @@
 <link rel="stylesheet" href="/css/bootstrap-image-gallery.min.css">
 @endif
 
+@if (isset($tabsLeft) and $tabsLeft)
+    {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/prettyPhoto.css'))}}
+    {{HTML::style('asset('packages/hugo-kalidas/laravel-flex-cms/css/owl.carousel.css'))}}
+    {{HTML::style('asset('packages/hugo-kalidas/laravel-flex-cms/css/owl.theme.css'))}}
+
+@endif
+
 {{HTML::script('https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')}}
 {{HTML::script('https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')}}
 

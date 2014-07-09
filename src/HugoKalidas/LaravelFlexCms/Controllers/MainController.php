@@ -45,22 +45,26 @@ class MainController extends BaseController{
             $jumbo=$page->filterBlocks('Jumbotron');
             if ($jumbo->count())$jumbo=$jumbo->first();
             else $jumbo = false;
+            $tabsLeft=$page->filterBlocks('Tabs-left');
+            if ($tabsLeft->count()) $tabsLeft = true;
+            else $tabsLeft = false;
 
 
             //todo add to page
             $truncate=true;
             return View::make('laravel-flex-cms::main.layouts.grid')->with('menuItems',$menuItems)->with('page',$page)
                     ->with('truncate',$truncate)->with('customStyle','grid.css')->with('jumbo',$jumbo)->with('lang',$lang)
-                    ->with('saiba',$saiba)->with('video',$video);
+                    ->with('saiba',$saiba)->with('video',$video)->with('tabsLeft',$tabsLeft);
         }
 
         else {
             $post = Posts::where('slug','=',$key);
             if ($post->count()) {
                 $post= $post->first();
+                //todo globals -> single widgets
                 //$pubPosts=Blocks::find(5)->posts()->get();
                 return View::make('laravel-flex-cms::main.layouts.single')->with('menuItems',$menuItems)
-                        ->with('post',$post)->with('pubPosts',$pubPosts)->with('customStyle','single.css')->with('lang',$lang)
+                        ->with('post',$post)->with('pubPosts',false)->with('customStyle','single.css')->with('lang',$lang)
                     ->with('saiba',$saiba)->with('video',$video);
             }
             else {

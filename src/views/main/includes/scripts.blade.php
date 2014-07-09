@@ -10,6 +10,34 @@
 
 @endif
 
+@if (isset($prettyPhoto))
+{{HTML::script('http://cdn.jsdelivr.net/prettyphoto/3.1.5/js/jquery.prettyPhoto.js')}}
+
+<script>
+    $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+</script>
+
+@endif
+
+@if (isset($owl))
+{{HTML::script('http://cdn.jsdelivr.net/jquery.owlcarousel/1.31/owl.carousel.min.js')}}
+
+<script>
+    $(document).ready(function () {
+        $(".owl-slider").owlCarousel({
+
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+            items: 4,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [979, 3]
+
+        });
+    });
+</script>
+@endif
 
 
 <!-- Todo loop Footer bottom  -->
