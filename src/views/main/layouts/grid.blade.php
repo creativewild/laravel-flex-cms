@@ -147,7 +147,9 @@
                                         <h2><a href="/{{$lang}}/{{$post->slug}}">{{{ !empty($post->$titlevar) ? $post->$titlevar : $post->title }}}</a></h2>
                                     @endif
                                     <div class="contentContainer">
+                                        @if ($post->$type = 'link_to_article')
                                         <a class="linkable" href="/{{$lang}}/{{$post->slug}}">
+                                        @endif
                                         @if($lang=='pt' or empty($post->$lang))
                                            {{-- */ $content=$post->content  /* --}}
                                         @else
@@ -165,7 +167,9 @@
                                                   {{$content}}
 
                                             @endif
+                                         @if ($post->$type = 'link_to_article')
                                          </a>
+                                        @endif
                                     </div>
 
                                      @if (isset($articleClass) and  $articleClass == "video")

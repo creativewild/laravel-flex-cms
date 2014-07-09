@@ -35,6 +35,7 @@ class Posts extends EloquentBaseModel
     public $typeOptions = array('Article' => 'Article',
         'Video' => 'Video',
         'Featured' => 'Featured',
+        'link_to_article'=>'link_to_article',
         'HTML' => 'HTML',
         'Pub' => 'Pub',
         'Slide' => 'Slide',

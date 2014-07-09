@@ -45,13 +45,15 @@ class MainController extends BaseController{
             $jumbo=$page->filterBlocks('Jumbotron');
             if ($jumbo->count())$jumbo=$jumbo->first();
             else $jumbo = false;
-
+            $tabsLeft=$page->filterBlocks('Tabs-left');
+            if ($tabsLeft->count()) $tabsLeft = true;
+            else $tabsLeft = false;
 
             //todo add to page
             $truncate=true;
             return View::make('laravel-flex-cms::main.layouts.grid')->with('menuItems',$menuItems)->with('page',$page)
-                    ->with('truncate',$truncate)->with('customStyle','grid.css')->with('jumbo',$jumbo)->with('lang',$lang)
-                    ->with('saiba',$saiba)->with('video',$video);
+                ->with('truncate',$truncate)->with('customStyle','grid.css')->with('jumbo',$jumbo)->with('lang',$lang)
+                ->with('saiba',$saiba)->with('video',$video)->with('tabsl',true);
         }
 
         else {
