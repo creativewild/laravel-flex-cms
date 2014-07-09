@@ -2,7 +2,7 @@
 
   <div class="row">
     <!-- /tabs -->
-    <div><h3>{{$block->title}}</h3>
+    <div><h3>Tabs -left</h3>
           	
   
       <div class="tabbable tabs-left">
