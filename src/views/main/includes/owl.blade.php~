@@ -2,8 +2,8 @@
 {{-- */
 $images=$post->uploads()->get();
 /* --}}
-<div class="owlwrapper">
-<div class="owlContainer container">
+
+<div class="owlContainer">
     <div class="owl-slider">
         @foreach ($images as $image)
         <a class="item" href="/uploads/posts/{{$post->id}}/{{$image->filename}}"  rel="prettyPhoto" title="{{$post->title}}">
@@ -11,7 +11,6 @@ $images=$post->uploads()->get();
         </a>
 
         @endforeach
-</div>
 </div>
 </div>
 

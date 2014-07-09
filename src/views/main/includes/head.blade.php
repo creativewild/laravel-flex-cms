@@ -48,7 +48,7 @@
 <link rel="stylesheet" href="/css/bootstrap-image-gallery.min.css">
 @endif
 
-@if (isset($tabsLeft) and $tabsLeft)
+@if ( $tabsl)
     {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/vertical-tabs.css'))}}
     {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/prettyPhoto.css'))}}
     {{HTML::style(asset('packages/hugo-kalidas/laravel-flex-cms/css/owl.carousel.css'))}}

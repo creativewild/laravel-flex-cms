@@ -10,21 +10,14 @@
 
 @endif
 
-@if (isset($prettyPhoto))
+@if ($tabsl)
 {{HTML::script('http://cdn.jsdelivr.net/prettyphoto/3.1.5/js/jquery.prettyPhoto.js')}}
-
+{{HTML::script('http://cdn.jsdelivr.net/jquery.owlcarousel/1.31/owl.carousel.min.js')}}
 <script>
     $(document).ready(function () {
         $("a[rel^='prettyPhoto']").prettyPhoto();
     });
-</script>
 
-@endif
-
-@if (isset($owl))
-{{HTML::script('http://cdn.jsdelivr.net/jquery.owlcarousel/1.31/owl.carousel.min.js')}}
-
-<script>
     $(document).ready(function () {
         $(".owl-slider").owlCarousel({
 

@@ -48,13 +48,12 @@ class MainController extends BaseController{
             $tabsLeft=$page->filterBlocks('Tabs-left');
             if ($tabsLeft->count()) $tabsLeft = true;
             else $tabsLeft = false;
-            $tabsLeft = true;
 
             //todo add to page
             $truncate=true;
             return View::make('laravel-flex-cms::main.layouts.grid')->with('menuItems',$menuItems)->with('page',$page)
                     ->with('truncate',$truncate)->with('customStyle','grid.css')->with('jumbo',$jumbo)->with('lang',$lang)
-                    ->with('saiba',$saiba)->with('video',$video)->with('tabsLeft',$tabsLeft);
+                    ->with('saiba',$saiba)->with('video',$video)->with('tabsl',true);
         }
 
         else {
