@@ -36,7 +36,7 @@
     <script src="/packages/hugo-kalidas/laravel-flex-cms/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
     <script>
         var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/monokai");
+        editor.setTheme("ace/theme/cobalt");
 
    	editor.getSession().setMode("ace/mode/php");
         var filePath = "{{$path}}";
