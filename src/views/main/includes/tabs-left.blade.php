@@ -22,12 +22,12 @@
             <!-- todo isset owl -->
           @foreach ($block->posts()->get() as $post)
               @if ($count==1)     
-                <div class="tab-pane active" id="{{$post->slug}}">{{$post->content}}</div>
+                <div class="tab-pane active" id="{{$post->slug}}">{{$post->content}}
                @else
-             <div class="tab-pane" id="{{$post->slug}}">{{$post->content}}</div>
+             <div class="tab-pane" id="{{$post->slug}}">{{$post->content}}
               @endif
 
-              @include('laravel-flex-cms::main.includes.owl')
+              @include('laravel-flex-cms::main.includes.owl')</div>
              <?php $count++;?>
           @endforeach
         </div>
