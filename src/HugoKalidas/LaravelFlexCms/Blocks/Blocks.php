@@ -25,6 +25,7 @@ class Blocks extends EloquentBaseModel
 
     public $typeOptions = array('Selected' => 'Selected',
                                 'Jumbotron' => 'Jumbotron',
+                                'Tabs-left' => 'Tabs-left',
                                 'Recent' => 'Recent',
                                 'Category' => 'Category',
                                 'Tag' =>  'Tag',

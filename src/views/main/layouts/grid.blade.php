@@ -34,6 +34,8 @@
                     @if ($block->type=="Jumbotron")
                         {{-- */ $jumbo=$block /* --}}
                         @include('laravel-flex-cms::main.includes.jumbotron')
+                    @elseif ($block->type=="Tabs-left")
+                        @include('laravel-flex-cms::main.includes.tabs-left')
                     @elseif (!is_null($block->containers_id) )
                         {{-- */$countPosts=0; $cols = $block->containers()->first()->columns();$colsCount=$cols->count();$colsTotal = $colsCount;$cols=$cols->get()  /* --}}
 
